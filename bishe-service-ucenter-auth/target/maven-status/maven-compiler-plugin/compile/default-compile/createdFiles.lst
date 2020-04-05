@@ -1,0 +1,6 @@
+com\bishe\auth\service\UserDetailsServiceImpl.class
+com\bishe\auth\UcenterAuthApplication.class
+com\bishe\auth\config\WebSecurityConfig.class
+com\bishe\auth\config\CustomUserAuthenticationConverter.class
+com\bishe\auth\config\AuthorizationServerConfig.class
+com\bishe\auth\service\UserJwt.class

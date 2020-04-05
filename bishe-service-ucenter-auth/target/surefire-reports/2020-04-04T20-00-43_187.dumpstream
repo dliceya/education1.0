@@ -1,0 +1,15 @@
+# Created on 2020-04-04T20:00:43.190
+WARNING: An illegal reflective access operation has occurred
+
+# Created on 2020-04-04T20:00:43.191
+WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (file:/G:/apache-maven-3.5.2/maven_repository/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+
+# Created on 2020-04-04T20:00:43.191
+WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+
+# Created on 2020-04-04T20:00:43.192
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+
+# Created on 2020-04-04T20:00:43.194
+WARNING: All illegal access operations will be denied in a future release
+

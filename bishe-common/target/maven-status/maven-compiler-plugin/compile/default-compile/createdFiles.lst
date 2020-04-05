@@ -1,0 +1,7 @@
+com\bishe\framework\model\response\ResultCode.class
+com\bishe\framework\model\response\Response.class
+com\bishe\framework\model\response\QueryResult.class
+com\bishe\framework\model\response\CommonCode.class
+com\bishe\framework\model\response\ResponseResult.class
+com\bishe\framework\model\response\QueryResponseResult.class
+com\bishe\framework\model\request\RequestData.class
