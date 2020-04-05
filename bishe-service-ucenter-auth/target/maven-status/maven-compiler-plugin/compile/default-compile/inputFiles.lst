@@ -1,6 +1,8 @@
 F:\aaEdu\education1.0\bishe-service-ucenter-auth\src\main\java\com\bishe\auth\UcenterAuthApplication.java
 F:\aaEdu\education1.0\bishe-service-ucenter-auth\src\main\java\com\bishe\auth\config\CustomUserAuthenticationConverter.java
 F:\aaEdu\education1.0\bishe-service-ucenter-auth\src\main\java\com\bishe\auth\service\UserJwt.java
+F:\aaEdu\education1.0\bishe-service-ucenter-auth\src\main\java\com\bishe\auth\service\AuthService.java
 F:\aaEdu\education1.0\bishe-service-ucenter-auth\src\main\java\com\bishe\auth\service\UserDetailsServiceImpl.java
+F:\aaEdu\education1.0\bishe-service-ucenter-auth\src\main\java\com\bishe\auth\controller\AuthController.java
 F:\aaEdu\education1.0\bishe-service-ucenter-auth\src\main\java\com\bishe\auth\config\AuthorizationServerConfig.java
 F:\aaEdu\education1.0\bishe-service-ucenter-auth\src\main\java\com\bishe\auth\config\WebSecurityConfig.java

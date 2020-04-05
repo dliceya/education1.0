@@ -1,7 +1,10 @@
 F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\model\response\Response.java
 F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\model\response\CommonCode.java
 F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\model\response\ResultCode.java
+F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\exception\ExceptionCast.java
 F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\model\response\QueryResult.java
 F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\model\request\RequestData.java
 F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\model\response\QueryResponseResult.java
 F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\model\response\ResponseResult.java
+F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\exception\CustomException.java
+F:\aaEdu\education1.0\bishe-common\src\main\java\com\bishe\framework\exception\ExceptionCatch.java

@@ -1,5 +1,7 @@
 com\bishe\framework\domain\ucenter\request\LoginRequest.class
 com\bishe\framework\domain\user\User.class
+com\bishe\framework\domain\ucenter\ext\AuthToken.class
+com\bishe\framework\domain\ucenter\response\AuthCode.class
 com\bishe\framework\domain\ucenter\response\LoginResult.class
 com\bishe\framework\domain\user\request\QueryPageRequest.class
 com\bishe\framework\domain\user\response\UserResult.class

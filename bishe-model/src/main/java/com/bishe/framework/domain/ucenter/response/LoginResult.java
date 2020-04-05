@@ -5,10 +5,10 @@ import com.bishe.framework.model.response.ResultCode;
 
 public class LoginResult extends ResponseResult {
 
-    private String token;
+    private String jti;
 
-    public LoginResult(ResultCode resultCode, String token){
+    public LoginResult(ResultCode resultCode, String jti){
         super(resultCode);
-        this.token = token;
+        this.jti = jti;
     }
 }
