@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bisheUi:war">
+    <output-path>$PROJECT_DIR$/bisheUi/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>bisheUi</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="bishe-Ui.war">
+      <element id="artifact" artifact-name="bisheUi:war exploded" />
+    </root>
+  </artifact>
+</component>

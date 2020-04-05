@@ -1,0 +1,8 @@
+server:
+  port: 50101  #服务端口
+spring:
+  application:
+    name: bishe-govern-center
+eureka:
+  client:
+    registerWithEureka: false

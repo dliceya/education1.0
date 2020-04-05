@@ -1,0 +1,39 @@
+
+//生成证书                  秘钥                   秘钥密码                   秘钥库名                秘钥库密码
+keytool -genkeypair -alias bishekey -keyalg RSA -keypass 123dlice -keystore bs.keystore -storepass dlicestore
+//证书信息
+CN=zheng, OU=bishe, O=dlice, L=xian, ST=shanxi, C=china
+查看证书
+keytool -list -keystore xc.keystore
+导出公钥信息
+keytool -list -rfc --keystore bs.keystore | openssl x509 -inform pem -pubkey
+
+jwtEncode
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZGxpY2UifQ.ZT8qKOFaMgFnTB-yKAFIXrgJOGb4oC3P3JoujJ_jcHCqgI4r6FWtuHDKTn9eDU2McYIIoJjiYXLY_qs1Xn0mPmiQ5SARdaLqL9VdnZMXT0SJo0-0OB8XdcLziITvfIGytitLMHrupbd6rOot40gmL_BkHVS8-p2M1NlX2fjx-6HBz5auPiPRB7YOhMxbqDDt9NP6_yWOd7KlM4p_Mkw0wjOStf1XENPVyTsvWpcGlKu-rpIWfC3q24sXMRB3o6FSWMYiYkvAIlNRLL60i3ds6i6RcaUIelHsDb3Yh_HuywjBbYYK9dwezrtdnAm1K-jPLOZRdbLgB9DoQDalWuha9A
+
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55SWQiOiIwIiwidXNlcnBpYyI6IkM6L3Rlc3QuanBnIiwidXNlcl9uYW1lIjoiWGNXZWJBcHAiLCJzY29wZSI6WyJhcHAiXSwibmFtZSI6Ikx1Y2FzIiwidXR5cGUiOiJyb290IiwiaWQiOiIxNjA2MDMyNiIsImV4cCI6MTU4NjAyNzIyOSwianRpIjoiNjdlNDAzMTctYmQwYS00ZDE0LWEzNTYtZmRiNjVlZDNhOTUyIiwiY2xpZW50X2lkIjoiWGNXZWJBcHAifQ.Gvv28qGhMOdi2CbkMtsn28o0LCQAScaIL7VSYnCxEqD5ZlveSt7OFPzaneSZBgQuUj3mN1Vz-2Oe1TQYu53Q3XJt4TXBcCeAjFnjKxUnJ_Udu-KSHnp08NGfdxQ5Pfcfupu1wnTjg9WI2J4gqRPPppk5oan2url3Qxsn37ZYzxPfAxR2S04iALf3JR1ywX92SCAKgbYy-comWzEkSx3R5YGnPjagQCpIBxBtqZoRCDgtia2r3jFyLMVylE1QZ7_cPsfoL6tqTNVxZPUwe8SaTeBzWefX-eMvrJGp45sLIiLWu391cNC1iotlTDbFoAaZ-jwIc8bDnZYnJxk0EiqmSg",
+    "token_type": "bearer",
+    "refresh_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55SWQiOiIwIiwidXNlcnBpYyI6IkM6L3Rlc3QuanBnIiwidXNlcl9uYW1lIjoiWGNXZWJBcHAiLCJzY29wZSI6WyJhcHAiXSwiYXRpIjoiNjdlNDAzMTctYmQwYS00ZDE0LWEzNTYtZmRiNjVlZDNhOTUyIiwibmFtZSI6Ikx1Y2FzIiwidXR5cGUiOiJyb290IiwiaWQiOiIxNjA2MDMyNiIsImV4cCI6MTU4NjAyNzIyOSwianRpIjoiMjg4NDE5YjMtMDdiZi00YTdiLTkzYjktMjU3NmRmZGI2NzhjIiwiY2xpZW50X2lkIjoiWGNXZWJBcHAifQ.LBy7tg0UfbViYxmoIOQwUEL4uNSWDMkqrgOmRQSQmqampDhPI71T3YXI27Dg0weH-3Dcim3cELoEvUGQoYQ9FOeJAS7p3opR_F9LjnvvCXm_U6mAWmcUrkED3pDw_44tuhRXQvVW5dLOC1IAkBe9YhUASSoKAAepIBSIS7_yf7ypo6nbHX0_HKNG5lDGcQY56YvXIGoQ4ekJaq9dyZFv3ipZFsUM165nhjtwA7XHVH8jHIRaee6Gscyxy89OB96bykppz7lrZg4yasFo91i__FUz3zzr2LWUYQAqhOeeVVTFw6r0i-Ky8EJ9sLYg8fPPDVxbH8BxdC8D5tx5TTMWqg",
+    "expires_in": 43199,
+    "scope": "app",
+    "jti": "67e40317-bd0a-4d14-a356-fdb65ed3a952"
+}
+
+{
+    "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55SWQiOiIwIiwidXNl
+    cnBpYyI6IkM6L3Rlc3QuanBnIiwidXNlcl9uYW1lIjoiZGxpY2UiLCJzY29wZSI6WyJhcHAiXSwibmFtZS
+    I6Ikx1Y2FzIiwidXR5cGUiOiJyb290IiwiaWQiOiIxNjA2MDMyNiIsImV4cCI6MTU4NjA0NTcyOCwiYXV0
+    aG9yaXRpZXMiOlsiZGxpY2UiLCJ0ZXN0Il0sImp0aSI6ImFhZGM0ZTRlLTM0YjItNGRmMS05ZWE4LWEyNT
+    c2ZjIwOTI0YSIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.Gq4-wyv5mneo9S6n5POo7BR-z_x_A_gNV2oLf
+    kjnCbFw1dEpN455HCrydBpv-VqgACBEQhb6fUn43hsY8Mru70bz6h4doJj0Suj09HsB97rq4CLpy6htAcXH
+    VpCrfGiRXboRGtTzHPsaadG1e0VH3JENWkRybux0VZGEU4E3KvBWwaPMhTlZ7afnRv2YE2zr_xnfBQv4_Pn
+    T-YbhxIN-ADW3KzZbp-H-nY66mcC8NzosRZwZvQTHeKDRDZF9cS4Kl2wdPuYUOaoBsMHQ3FnUBlGp2xAUZ
+    Me4YX5iqTRWIn2cV4zJcjy3ak7x4o5BWZ6u7S9q6tiHSCiFIVHi28cysw",
+    "token_type": "bearer",
+    "refresh_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb21wYW55SWQiOiIwIiwidXNlcnBpYyI6IkM6L3Rlc3QuanBnIiwidXNlcl9uYW1lIjoiZGxpY2UiLCJzY29wZSI6WyJhcHAiXSwiYXRpIjoiYWFkYzRlNGUtMzRiMi00ZGYxLTllYTgtYTI1NzZmMjA5MjRhIiwibmFtZSI6Ikx1Y2FzIiwidXR5cGUiOiJyb290IiwiaWQiOiIxNjA2MDMyNiIsImV4cCI6MTU4NjA0NTcyOCwiYXV0aG9yaXRpZXMiOlsiZGxpY2UiLCJ0ZXN0Il0sImp0aSI6ImJiYTEwZTVmLTYyMDAtNDQ1Mi1iYTA1LWJjOTIyNzc1ZmVkOCIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.CR6u3PksF-ULRf368VMGhaOqh9HUrSfKMgkQKtBoPDgoINxRJRtyHsqRNM0CKq0lS34BDe_QbCmSCDGMTv6Qi-3nzbqCj9OBjaNp0u28-NmPmeLBsSAiE_PVjh_9sKGccwBo0o_zNgrMc4JS_r0HfVvBy2y-tZNzbIOQkOUt609wGuotmFISoAzen2XBzX5C8qKxNj8eyWqzxCAZF4IPeO9Rjo7JDTJi1RNmGD6ggPkoCNceU4eghCaYSnNuHhU5yROPT_2IEWUKd3BBgjdmR_hhPC9xrmEINt4UOi5NQ4MN1P1yItsqSB_jbZ756R7SRSAwnHwJVwXUUbJIkzxZ3g",
+    "expires_in": 43199,
+    "scope": "app",
+    "jti": "aadc4e4e-34b2-4df1-9ea8-a2576f20924a"
+}
