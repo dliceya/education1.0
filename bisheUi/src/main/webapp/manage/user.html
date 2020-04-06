@@ -9,7 +9,7 @@
     <title>数据 - AdminLTE2定制版</title>
     <meta name="description" content="AdminLTE2定制版">
     <meta name="keywords" content="AdminLTE2定制版">
-    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,bsUser-scalable=no" name="viewport">
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -177,7 +177,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-user text-red"></i> You changed your username
+                                            <i class="fa fa-bsUser text-red"></i> You changed your username
                                         </a>
                                     </li>
                                 </ul>
@@ -272,14 +272,14 @@
                         </ul>
                     </li>
                     <!-- User Account: style can be found in dropdown.less -->
-                    <li class="dropdown user user-menu">
+                    <li class="dropdown bsUser bsUser-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="../resouces/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                            <img src="../resouces/img/user2-160x160.jpg" class="bsUser-image" alt="User Image">
                             <span class="hidden-xs">dlice</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
-                            <li class="user-header">
+                            <li class="bsUser-header">
                                 <img src="../resouces/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                                 <p>
@@ -289,7 +289,7 @@
                             </li>
 
                             <!-- Menu Footer-->
-                            <li class="user-footer">
+                            <li class="bsUser-footer">
                                 <div class="pull-left">
                                     <a href="#" class="btn btn-default btn-flat">修改密码</a>
                                 </div>
@@ -310,8 +310,8 @@
     <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-            <!-- Sidebar user panel -->
-            <div class="user-panel">
+            <!-- Sidebar ucenter panel -->
+            <div class="bsUser-panel">
                 <div class="pull-left image">
                     <img src="../resouces/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                 </div>
@@ -450,7 +450,7 @@
                             </thead>
                             <tbody>
 
-                            <tr v-for="u in userList">
+                            <tr v-for="u in bsUserList">
                                 <td><input name="ids" type="checkbox"></td>
                                 <td>{{u.id}}</td>
                                 <td>{{u.username}}
@@ -486,31 +486,31 @@
                                                         <div class="form-group">
                                                             <label class="col-sm-2 control-label">用户名:</label>
                                                             <div class="col-sm-5">
-                                                                <input type="text" class="form-control" v-model="user.username">
+                                                                <input type="text" class="form-control" v-model="bsUser.username">
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-sm-2 control-label">密码:</label>
                                                             <div class="col-sm-5">
-                                                                <input type="text" class="form-control" v-model="user.password">
+                                                                <input type="text" class="form-control" v-model="bsUser.password">
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-sm-2 control-label">性别:</label>
                                                             <div class="col-sm-5">
-                                                                <input type="text" class="form-control" v-model="user.sex">
+                                                                <input type="text" class="form-control" v-model="bsUser.sex">
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-sm-2 control-label">年龄:</label>
                                                             <div class="col-sm-5">
-                                                                <input type="text" class="form-control" v-model="user.age">
+                                                                <input type="text" class="form-control" v-model="bsUser.age">
                                                             </div>
                                                         </div>
                                                         <div class="form-group">
                                                             <label class="col-sm-2 control-label">邮箱:</label>
                                                             <div class="col-sm-5">
-                                                                <input type="text" class="form-control" v-model="user.email">
+                                                                <input type="text" class="form-control" v-model="bsUser.email">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -677,7 +677,7 @@
 <script src="../resouces/plugins/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
 <script src="../resouces/js/vuejs-2.5.16.js"></script>
 <script src="../resouces/js/axios-0.18.0.js"></script>
-<script src="../resouces/js/user.js"></script>
+<script src="../resouces/js/bsUser.js"></script>
 <script>
     $(document).ready(function () {
         // 选择框

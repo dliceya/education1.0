@@ -8,13 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bishe-model" />
+        <module name="bishe-service-ucenter-auth" />
         <module name="bishe-govern-center" />
-        <module name="bishe-common" />
+        <module name="bishe-service-ucenter" />
         <module name="utils" />
         <module name="bishe-api" />
         <module name="bisheUi" />
-        <module name="bishe-service-ucenter-auth" />
-        <module name="bishe-service-manage-user" />
+        <module name="bishe-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="12">
@@ -23,7 +23,7 @@
       <module name="bishe-govern-center" target="12" />
       <module name="bishe-model" target="12" />
       <module name="bishe-parent" target="12" />
-      <module name="bishe-service-manage-user" target="12" />
+      <module name="bishe-service-ucenter" target="12" />
       <module name="bishe-service-ucenter-auth" target="12" />
       <module name="bisheUi" target="1.7" />
       <module name="utils" target="12" />
@@ -35,7 +35,7 @@
       <module name="bishe-common" options="-parameters" />
       <module name="bishe-govern-center" options="-parameters" />
       <module name="bishe-model" options="-parameters" />
-      <module name="bishe-service-manage-user" options="-parameters" />
+      <module name="bishe-service-ucenter" options="-parameters" />
       <module name="bishe-service-ucenter-auth" options="-parameters" />
       <module name="bisheUi" options="" />
       <module name="utils" options="-parameters" />

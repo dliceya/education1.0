@@ -32,7 +32,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 		<p>
 			<abbr title="Advanced Content Filter">ACF</abbr> controls
 			<strong>every single source of data</strong> that comes to the editor.
-			It process both HTML that is inserted manually (i.e. pasted by the user)
+			It process both HTML that is inserted manually (i.e. pasted by the bsUser)
 			and programmatically like:
 		</p>
 <pre class="samples">
@@ -162,7 +162,7 @@ CKEDITOR.replace( <em>textarea_id</em>, {
 				href="http://docs.ckeditor.com/#!/api/CKEDITOR.config-cfg-allowedContent">
 				config.allowedContent</a></code> is defined by loaded plugins.
 				Each plugin extends filtering rules to make it's own associated content
-				available for the user.
+				available for the bsUser.
 			</p>
 		</div>
 		<textarea cols="80" id="editor1" name="editor1" rows="10">
@@ -380,7 +380,7 @@ CKEDITOR.replace( 'editor4', {
 			<p>
 				<abbr title="Advanced Content Filter">ACF</abbr> makes sure that
 				no disallowed tags will come to <code>&lt;h1&gt;</code> so the final
-				markup is valid. If the user tried to paste some invalid HTML
+				markup is valid. If the bsUser tried to paste some invalid HTML
 				into this editor (let's say a list), it would be automatically
 				converted into plain text.
 			</p>

@@ -794,7 +794,7 @@ ColVis.prototype = {
 		document.body.appendChild( nHidden );
 		document.body.appendChild( this.dom.catcher );
 
-		/* This results in a very small delay for the end user but it allows the animation to be
+		/* This results in a very small delay for the end ucenter but it allows the animation to be
 		 * much smoother. If you don't want the animation, then the setTimeout can be removed
 		 */
 		$(nHidden).animate({"opacity": 1}, that.s.iOverlayFade);
@@ -972,7 +972,7 @@ ColVis.defaults = {
 	sAlign: 'left',
 
 	/**
-	 * Callback function to tell the user when the state has changed
+	 * Callback function to tell the ucenter when the state has changed
 	 *  @property fnStateChange
 	 *  @type     function
 	 *  @default  null

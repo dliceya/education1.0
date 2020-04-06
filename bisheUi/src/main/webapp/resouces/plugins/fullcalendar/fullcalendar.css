@@ -49,7 +49,7 @@ body .fc { /* extra precedence to overcome jqui */
 	background: #fcf8e3;
 }
 
-.fc-highlight { /* when user is selecting cells */
+.fc-highlight { /* when ucenter is selecting cells */
 	background: #bce8f1;
 	opacity: .3;
 	filter: alpha(opacity=30); /* for IE */
@@ -660,7 +660,7 @@ a.fc-more:hover {
 .fc-basicDay-view .fc-content-skeleton {
 	/* we are sure there are no day numbers in these views, so... */
 	padding-top: 1px; /* add a pixel to make sure there are 2px padding above events */
-	padding-bottom: 1em; /* ensure a space at bottom of cell for user selecting/clicking */
+	padding-bottom: 1em; /* ensure a space at bottom of cell for ucenter selecting/clicking */
 }
 
 .fc-basic-view tbody .fc-row {

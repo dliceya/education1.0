@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/bishe-common.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/bishe-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/bishe-govern-center/bishe-govern-center.iml" filepath="$PROJECT_DIR$/bishe-govern-center/bishe-govern-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/bishe-model.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/bishe-model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/bishe-service-manage-user.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/bishe-service-manage-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/bishe-service-ucenter.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/bishe-service-ucenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml" filepath="$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/bisheUi.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/bisheUi.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/education1.0.iml" filepath="$PROJECT_DIR$/.idea/education1.0.iml" />

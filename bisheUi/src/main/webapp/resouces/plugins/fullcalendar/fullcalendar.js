@@ -1621,7 +1621,7 @@ var Popover = Class.extend({
 	},
 
 
-	// Triggered when the user clicks *anywhere* in the document, for the autoHide feature
+	// Triggered when the ucenter clicks *anywhere* in the document, for the autoHide feature
 	documentMousedown: function(ev) {
 		// only hide the popover if the click happened outside the popover
 		if (this.el && !$(ev.target).closest(this.el).length) {
@@ -1914,7 +1914,7 @@ var DragListener = Class.extend({
 	},
 
 
-	// Call this when the user does a mousedown. Will probably lead to startListening
+	// Call this when the ucenter does a mousedown. Will probably lead to startListening
 	mousedown: function(ev) {
 		if (isPrimaryMouseButton(ev)) {
 
@@ -1978,7 +1978,7 @@ var DragListener = Class.extend({
 	},
 
 
-	// Called when the user moves the mouse
+	// Called when the ucenter moves the mouse
 	mousemove: function(ev) {
 		var minDistance;
 		var distanceSq; // current distance from mouseX0/mouseY0, squared
@@ -2058,7 +2058,7 @@ var DragListener = Class.extend({
 	},
 
 
-	// Called when the user does a mouseup
+	// Called when the ucenter does a mouseup
 	mouseup: function(ev) {
 		this.stopDrag(ev);
 		this.stopListening(ev);
@@ -2076,7 +2076,7 @@ var DragListener = Class.extend({
 	},
 
 
-	// Call this to stop listening to the user's mouse events
+	// Call this to stop listening to the ucenter's mouse events
 	stopListening: function(ev) {
 		if (this.isListening) {
 
@@ -2445,7 +2445,7 @@ var MouseFollower = Class.extend({
 	},
 
 
-	// Gets called when the user moves the mouse
+	// Gets called when the ucenter moves the mouse
 	mousemove: function(ev) {
 		this.topDelta = ev.pageY - this.mouseY0;
 		this.leftDelta = ev.pageX - this.mouseX0;
@@ -3163,7 +3163,7 @@ var Grid = fc.Grid = RowRenderer.extend({
 
 Grid.mixin({
 
-	mousedOverSeg: null, // the segment object the user's mouse is over. null if over nothing
+	mousedOverSeg: null, // the segment object the ucenter's mouse is over. null if over nothing
 	isDraggingSeg: false, // is a segment being dragged? boolean
 	isResizingSeg: false, // is a segment being resized? boolean
 	segs: null, // the event segments currently rendered in the grid
@@ -3198,7 +3198,7 @@ Grid.mixin({
 
 	// Unrenders all events currently rendered on the grid
 	destroyEvents: function() {
-		this.triggerSegMouseout(); // trigger an eventMouseout if user's mouse is over an event
+		this.triggerSegMouseout(); // trigger an eventMouseout if ucenter's mouse is over an event
 
 		this.destroyFgSegs();
 		this.destroyBgSegs();
@@ -3407,7 +3407,7 @@ Grid.mixin({
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Called when the user does a mousedown on an event, which might lead to dragging.
+	// Called when the ucenter does a mousedown on an event, which might lead to dragging.
 	// Generic enough to work with any type of Grid.
 	segDragMousedown: function(seg, ev) {
 		var _this = this;
@@ -3646,7 +3646,7 @@ Grid.mixin({
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Called when the user does a mousedown on an event's resizer, which might lead to resizing.
+	// Called when the ucenter does a mousedown on an event's resizer, which might lead to resizing.
 	// Generic enough to work with any type of Grid.
 	segResizeMousedown: function(seg, ev) {
 		var _this = this;
@@ -5060,7 +5060,7 @@ DayGrid.mixin({
 			content: this.renderSegPopoverContent(cell, segs),
 			parentEl: this.el,
 			top: topEl.offset().top,
-			autoHide: true, // when the user clicks elsewhere, hide the popover
+			autoHide: true, // when the ucenter clicks elsewhere, hide the popover
 			viewportConstrain: view.opt('popoverViewportConstrain'),
 			hide: function() {
 				// destroy everything when the popover is hidden
@@ -6119,7 +6119,7 @@ var View = fc.View = Class.extend({
 	intervalDuration: null, // the whole-unit duration that is being displayed
 	intervalUnit: null, // name of largest unit being displayed, like "month" or "week"
 
-	isSelected: false, // boolean whether a range of time is user-selected or not
+	isSelected: false, // boolean whether a range of time is ucenter-selected or not
 
 	// subclasses can optionally use a scroll container
 	scrollerEl: null, // the element that will most likely scroll when content is too tall
@@ -6247,7 +6247,7 @@ var View = fc.View = Class.extend({
 	},
 
 
-	// Computes the new date when the user hits the prev button, given the current date
+	// Computes the new date when the ucenter hits the prev button, given the current date
 	computePrevDate: function(date) {
 		return this.skipHiddenDays(
 			date.clone().startOf(this.intervalUnit).subtract(this.intervalDuration), -1
@@ -6255,7 +6255,7 @@ var View = fc.View = Class.extend({
 	},
 
 
-	// Computes the new date when the user hits the next button, given the current date
+	// Computes the new date when the ucenter hits the next button, given the current date
 	computeNextDate: function(date) {
 		return this.skipHiddenDays(
 			date.clone().startOf(this.intervalUnit).add(this.intervalDuration)
@@ -6421,7 +6421,7 @@ var View = fc.View = Class.extend({
 	},
 
 
-	// Sets the scroll value of the scroller to the initial pre-configured state prior to allowing the user to change it
+	// Sets the scroll value of the scroller to the initial pre-configured state prior to allowing the ucenter to change it
 	initializeScroll: function() {
 	},
 
@@ -6541,7 +6541,7 @@ var View = fc.View = Class.extend({
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Computes if the given event is allowed to be dragged by the user
+	// Computes if the given event is allowed to be dragged by the ucenter
 	isEventDraggable: function(event) {
 		var source = event.source || {};
 
@@ -6632,7 +6632,7 @@ var View = fc.View = Class.extend({
 	------------------------------------------------------------------------------------------------------------------*/
 
 
-	// Computes if the given event is allowed to be resize by the user
+	// Computes if the given event is allowed to be resize by the ucenter
 	isEventResizable: function(event) {
 		var source = event.source || {};
 
@@ -6710,11 +6710,11 @@ var View = fc.View = Class.extend({
 	},
 
 
-	// Handler for unselecting when the user clicks something and the 'unselectAuto' setting is on
+	// Handler for unselecting when the ucenter clicks something and the 'unselectAuto' setting is on
 	documentMousedown: function(ev) {
 		var ignore;
 
-		// is there a selection, and has the user made a proper left click?
+		// is there a selection, and has the ucenter made a proper left click?
 		if (this.isSelected && this.opt('unselectAuto') && isPrimaryMouseButton(ev)) {
 
 			// only unselect if the clicked element is not identical to or inside of an 'unselectCancel' element
@@ -7387,7 +7387,7 @@ var View = fc.View = Class.extend({
 
 
 	function refetchEvents() { // can be called as an API method
-		destroyEvents(); // so that events are cleared before user starts waiting for AJAX
+		destroyEvents(); // so that events are cleared before ucenter starts waiting for AJAX
 		fetchAndRenderEvents();
 	}
 
@@ -9585,7 +9585,7 @@ fcViews.agenda = View.extend({ // AgendaView
 	},
 
 
-	// Sets the scroll value of the scroller to the initial pre-configured state prior to allowing the user to change it
+	// Sets the scroll value of the scroller to the initial pre-configured state prior to allowing the ucenter to change it
 	initializeScroll: function() {
 		var _this = this;
 		var scrollTime = moment.duration(this.opt('scrollTime'));

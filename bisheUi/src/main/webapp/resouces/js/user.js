@@ -15,7 +15,7 @@ new Vue({
         findAll:function(){
             //在当前方法中定义一个变量，表明是vue对象
             var _this = this;
-            axios.get('/day01_eesy_vuejsdemo/user/findAll.do')
+            axios.get('/day01_eesy_vuejsdemo/ucenter/findAll.do')
                 .then(function (response) {
                     _this.userList = response.data;//响应数据给userList赋值
                     console.log(response);
@@ -27,7 +27,7 @@ new Vue({
         findById:function (userid) {
             //在当前方法中定义一个变量，表明是vue对象
             var _this = this;
-            axios.get('/day01_eesy_vuejsdemo/user/findById.do',{params:{id:userid}})
+            axios.get('/day01_eesy_vuejsdemo/ucenter/findById.do',{params:{id:userid}})
                 .then(function (response) {
                     _this.user = response.data;//响应数据给userList赋值
                     $("#myModal").modal("show");
@@ -39,7 +39,7 @@ new Vue({
         update:function (user) {//post请求
             //在当前方法中定义一个变量，表明是vue对象
             var _this = this;
-            axios.post('/day01_eesy_vuejsdemo/user/updateUser.do', _this.user)
+            axios.post('/day01_eesy_vuejsdemo/ucenter/updateUser.do', _this.user)
                 .then(function (response) {
                     _this.findAll();
                 })

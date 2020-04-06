@@ -14,7 +14,7 @@ function login11() {
 
     $.ajax({
     	type: 'post',
-    	url: 'http://' + domain + ':10001/user/login',
+    	url: 'http://' + domain + ':10001/ucenter/login',
     	headers: {
     		"content-Type": "application/json;charset=utf-8",
     		"Access-Control-Allow-Origin":'*'

@@ -1,6 +1,6 @@
 package com.bishe.auth.service;
 
-import com.bishe.framework.domain.user.UserExt;
+import com.bishe.framework.domain.ucenter.BsUserExt;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
@@ -39,7 +39,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         if (StringUtils.isEmpty(username)) {
             return null;
         }
-        UserExt userExt = new UserExt();
+        BsUserExt userExt = new BsUserExt();
         userExt.setUsername("dlice");
         userExt.setPassword(new BCryptPasswordEncoder().encode("158156"));
         if(userExt == null){

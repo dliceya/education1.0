@@ -1,8 +1,9 @@
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\request\QueryPageRequest.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\AuthCode.java
-F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\user\UserExt.java
-F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\user\request\QueryPageRequest.java
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\BsMenu.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\request\LoginRequest.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\LoginResult.java
-F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\user\response\UserResult.java
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\BsUserExt.java
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\UserResult.java
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\BsUser.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\ext\AuthToken.java
-F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\user\User.java

@@ -34,11 +34,13 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-commons</artifactId>
+            <version>1.13.20.RELEASE</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
+            <version>5.0.12.Final</version>
         </dependency>
 
 
