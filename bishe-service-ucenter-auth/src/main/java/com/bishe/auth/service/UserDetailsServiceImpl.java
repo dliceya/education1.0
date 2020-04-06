@@ -1,5 +1,6 @@
 package com.bishe.auth.service;
 
+import com.bishe.auth.client.UserClient;
 import com.bishe.framework.domain.ucenter.BsUserExt;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,6 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.provider.ClientDetails;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.stereotype.Service;
@@ -22,6 +22,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
     ClientDetailsService clientDetailsService;
+    @Autowired
+    UserClient userClient;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -39,26 +41,23 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         if (StringUtils.isEmpty(username)) {
             return null;
         }
-        BsUserExt userExt = new BsUserExt();
-        userExt.setUsername("dlice");
-        userExt.setPassword(new BCryptPasswordEncoder().encode("158156"));
+
+        //远程调用用户中心根据账号查询用户信息
+        BsUserExt userExt = userClient.getUserExt(username);
         if(userExt == null){
             return null;
         }
         //取出正确密码（hash值）
-        //String password = userext.getPassword();
-        //这里暂时使用静态密码
-//       String password ="123";
+        String password =userExt.getPassword();
         //用户权限，这里暂时使用静态数据，最终会从数据库读取
         //从数据库获取权限
         UserJwt userDetails = new UserJwt(userExt.getUsername(),
                 userExt.getPassword(),
                 AuthorityUtils.commaSeparatedStringToAuthorityList("test, dlice"));
-        userDetails.setId("16060326");
-        userDetails.setUtype("root");//用户类型
-        userDetails.setCompanyId("0");//所属企业
-        userDetails.setName("Lucas");//用户名称
-        userDetails.setUserpic("C:/test.jpg");//用户头像
+        userDetails.setId(userExt.getUid());
+        userDetails.setCompanyId(userExt.getPid());//所属企业
+        userDetails.setName(userExt.getUsername());//用户名称
+        userDetails.setPower(userExt.getPassword());
        /* UserDetails userDetails = new org.springframework.security.core.userdetails.User(username,
                 password,
                 AuthorityUtils.commaSeparatedStringToAuthorityList(""));*/

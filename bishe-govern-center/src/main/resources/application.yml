@@ -2,7 +2,7 @@ server:
   port: 50101 #服务端口
 spring:
   application:
-    name: bishe-govern-center #指定服务名
+    name: bs-govern-center #指定服务名
 eureka:
   client:
     registerWithEureka: false #服务注册，是否将自己注册到Eureka服务中

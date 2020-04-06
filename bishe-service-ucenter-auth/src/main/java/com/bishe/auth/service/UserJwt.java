@@ -11,11 +11,10 @@ import java.util.Collection;
 @ToString
 public class UserJwt extends User {
 
-    private String id;
+    private int id;
     private String name;
-    private String userpic;
-    private String utype;
-    private String companyId;
+    private int companyId;
+    private String power;
 
     public UserJwt(String username, String password, Collection<? extends GrantedAuthority> authorities) {
         super(username, password, authorities);
