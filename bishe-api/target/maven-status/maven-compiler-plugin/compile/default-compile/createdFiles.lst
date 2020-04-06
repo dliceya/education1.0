@@ -1,2 +1,3 @@
-com\bishe\api\user\UserControllerApi.class
 com\bishe\api\auth\AuthControllerApi.class
+com\bishe\api\ucenter\UcenterControllerApi.class
+com\bishe\api\ucenter\UserControllerApi.class

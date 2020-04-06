@@ -1,8 +1,8 @@
-package com.bishe.api.user;
+package com.bishe.api.ucenter;
 
-import com.bishe.framework.domain.user.User;
-import com.bishe.framework.domain.user.request.QueryPageRequest;
-import com.bishe.framework.domain.user.response.UserResult;
+import com.bishe.framework.domain.ucenter.BsUser;
+import com.bishe.framework.domain.ucenter.request.QueryPageRequest;
+import com.bishe.framework.domain.ucenter.response.UserResult;
 import com.bishe.framework.model.response.QueryResponseResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -22,12 +22,13 @@ public interface UserControllerApi {
 
     //添加用户
     @ApiOperation("添加用户")
-    public UserResult addUser(User user);
+    public UserResult addUser(BsUser bsUser);
 
     @ApiOperation("用户登录接口")
     @ApiImplicitParams({
-            @ApiImplicitParam(name="user",value = "登录信息",required=true,paramType="Json"
+            @ApiImplicitParam(name="ucenter",value = "登录信息",required=true,paramType="Json"
              ,dataType="User{userName, Password}")
     })
-    public UserResult login(User user);
+    public UserResult login(BsUser bsUser);
+
 }
