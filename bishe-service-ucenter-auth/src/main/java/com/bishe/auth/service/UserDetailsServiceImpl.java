@@ -2,7 +2,6 @@ package com.bishe.auth.service;
 
 import com.bishe.auth.client.UserClient;
 import com.bishe.framework.domain.ucenter.BsUserExt;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.security.core.Authentication;
@@ -38,11 +37,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                 return new User(username,clientSecret,AuthorityUtils.commaSeparatedStringToAuthorityList(""));
             }
         }
-        if (StringUtils.isEmpty(username)) {
-            return null;
-        }
 
-        //远程调用用户中心根据账号查询用户信息
+        //远程调用用户中心(bishe-ucenter)根据账号查询用户信息
         BsUserExt userExt = userClient.getUserExt(username);
         if(userExt == null){
             return null;

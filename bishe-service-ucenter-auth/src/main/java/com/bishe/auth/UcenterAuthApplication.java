@@ -15,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 @EntityScan("com.bishe.framework.domain.ucenter")
 @ComponentScan(basePackages={"com.bishe.api"})//扫描接口
 @ComponentScan(basePackages={"com.bishe.framework"})//扫描common下的所有类
+@ComponentScan(basePackages={"com.bishe.auth"})
 @SpringBootApplication
 public class UcenterAuthApplication {
     public static void main(String[] args) {

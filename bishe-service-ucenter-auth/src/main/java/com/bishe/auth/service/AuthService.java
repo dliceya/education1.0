@@ -6,6 +6,8 @@ import com.bishe.framework.domain.ucenter.response.AuthCode;
 import com.bishe.framework.exception.ExceptionCast;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -19,6 +21,7 @@ import org.springframework.web.client.DefaultResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
+import java.net.URI;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -29,13 +32,24 @@ public class AuthService {
     RestTemplate restTemplate;
 
     @Autowired
+    LoadBalancerClient loadBalancerClient;
+
+    @Autowired
     StringRedisTemplate redisTemplate;
 
     @Value("${auth.tokenValiditySeconds}")
     int tokenValiditySeconds;
 
-    //用户身份申请令牌，将令牌存Redis
+    /**
+     * 申请用户身份令牌，
+     * @param username  用户名
+     * @param password  用户密码
+     * @param clientId  客户端id
+     * @param clientSecret  客户端密码
+     * @return  如果有返回则登录成功，否则抛出异常
+     */
     public AuthToken login(String username, String password, String clientId, String clientSecret) {
+
         AuthToken authToken = this.applyToken(username, password, clientId, clientSecret);
         if(authToken == null){
             ExceptionCast.cast(AuthCode.AUTH_LOGIN_APPLYTOKEN_FAIL);
@@ -74,11 +88,11 @@ public class AuthService {
     private AuthToken applyToken(String username, String password, String clientId, String clientSecret){
         //请求Spring Security申请令牌
         //从Eureka中获取认证服务的地址
-        //ServiceInstance choose = loadBalancerClient.choose("xc-server-ucenter-auth");
-        //URI uri = choose.getUri();
+        ServiceInstance choose = loadBalancerClient.choose("bs-service-ucenter-auth");
+        URI uri = choose.getUri();
         //令牌的申请地址 40400/auth/oauth/token
 
-        String authUri = "http://localhost:40400/auth/oauth/token";//uri + "/auth/oauth/token"
+        String authUri = uri + "/auth/oauth/token";
 
         //定义header
         LinkedMultiValueMap<String, String> header = new LinkedMultiValueMap<>();
@@ -104,6 +118,7 @@ public class AuthService {
             }
         });
 
+        //调用Oauth服务来验证用户身份，验证通过则颁发令牌
         ResponseEntity<Map> exchange = restTemplate.exchange(authUri, HttpMethod.POST, httpEntity, Map.class);
 
         //申请令牌信息
@@ -111,11 +126,16 @@ public class AuthService {
         if(bodyMap.get("access_token") == null ||
                 bodyMap.get("refresh_token") == null||
                 bodyMap.get("jti") == null){
-            return null;
-        }
 
-        if(bodyMap.get("error") == "invalid_grant"){
-            ExceptionCast.cast(AuthCode.AUTH_CREDENTIAL_ERROR);
+            if(bodyMap != null && bodyMap.get("error_description") != null){
+                String errorDescription = (String) bodyMap.get("error_description");
+                if(errorDescription.indexOf("UserDetailService return null") >= 0){
+                    ExceptionCast.cast(AuthCode.AUTH_ACCOUNT_NOTEXISTS);
+                }else if(errorDescription.indexOf("坏的凭证") >= 0){
+                    ExceptionCast.cast(AuthCode.AUTH_CREDENTIAL_ERROR);
+                }
+            }
+            return null;
         }
 
         AuthToken authToken = new AuthToken();

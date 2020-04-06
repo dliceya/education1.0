@@ -1,7 +1,6 @@
 package com.bishe.framework.domain.ucenter.response;
 
 import com.bishe.framework.model.response.ResultCode;
-import com.google.common.collect.ImmutableMap;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.ToString;
 
@@ -13,8 +12,8 @@ public enum AuthCode implements ResultCode {
     AUTH_ACCOUNT_NOTEXISTS(false,23004,"账号不存在！"),
     AUTH_CREDENTIAL_ERROR(false,23005,"账号或密码错误！"),
     AUTH_LOGIN_ERROR(false,23006,"登陆过程出现异常请尝试重新操作！"),
-    AUTH_LOGIN_APPLYTOKEN_FAIL(false,23007,"申请令牌失败！"),
-    AUTH_LOGIN_TOKEN_SAVEFAIL(false,23008,"存储令牌失败！"),
+    AUTH_LOGIN_APPLYTOKEN_FAIL(false,23007,"申请令牌失败！ 请与系统管理员联系：admin.dlice@bishe.com" ),
+    AUTH_LOGIN_TOKEN_SAVEFAIL(false,23008,"存储令牌失败！ 请与系统管理员联系：admin.dlice@bishe.com"),
     AUTH_LOGOUT_FAIL(false,23008,"退出失败！");
 
     //操作代码
@@ -31,15 +30,6 @@ public enum AuthCode implements ResultCode {
         this.success = success;
         this.code = code;
         this.message = message;
-    }
-    private static final ImmutableMap<Integer, AuthCode> CACHE;
-
-    static {
-        final ImmutableMap.Builder<Integer, AuthCode> builder = ImmutableMap.builder();
-        for (AuthCode commonCode : values()) {
-            builder.put(commonCode.code(), commonCode);
-        }
-        CACHE = builder.build();
     }
 
     @Override
