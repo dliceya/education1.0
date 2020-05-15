@@ -6968,7 +6968,7 @@ wysihtml5.dom.replaceWithChildNodes = function(node) {
      * Callback for when the iframe has finished loading
      */
     _onLoadIframe: function(iframe) {
-      // don't resume when the iframe got unloaded (eg. by removing it from the dom)
+      // don't book when the iframe got unloaded (eg. by removing it from the dom)
       if (!wysihtml5.dom.contains(doc.documentElement, iframe)) {
         return;
       }

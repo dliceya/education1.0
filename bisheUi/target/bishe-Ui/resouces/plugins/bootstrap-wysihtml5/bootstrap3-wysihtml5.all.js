@@ -3444,7 +3444,7 @@ var wysihtml5 = {
                 }
             };
         } else {
-            module.fail("No means of obtaining a Range or TextRange from the user's selection was found");
+            module.fail("No means of obtaining a Range or TextRange from the ucenter's selection was found");
             return false;
         }
 
@@ -3795,7 +3795,7 @@ var wysihtml5 = {
     return api;
 }, this);;/**
  * Selection save and restore module for Rangy.
- * Saves and restores user selections using marker invisible elements in the DOM.
+ * Saves and restores ucenter selections using marker invisible elements in the DOM.
  *
  * Part of Rangy, a cross-browser JavaScript range and selection library
  * http://code.google.com/p/rangy/
@@ -4400,7 +4400,7 @@ wysihtml5.browser = (function() {
      * IE: URLs starting with:
      *    www., http://, https://, ftp://, gopher://, mailto:, new:, snews:, telnet:, wasis:, file://,
      *    nntp://, newsrc:, ldap://, ldaps://, outlook:, mic:// and url:
-     * will automatically be auto-linked when either the user inserts them via copy&paste or presses the
+     * will automatically be auto-linked when either the ucenter inserts them via copy&paste or presses the
      * space bar when the caret is directly after such an url.
      * This behavior cannot easily be avoided in IE < 9 since the logic is hardcoded in the mshtml.dll
      * (related blog post on msdn
@@ -4521,7 +4521,7 @@ wysihtml5.browser = (function() {
     },
 
     /**
-     * In IE it's impssible for the user and for the selection library to set the caret after an <img> when it's the lastChild in the document
+     * In IE it's impssible for the ucenter and for the selection library to set the caret after an <img> when it's the lastChild in the document
      */
     hasProblemsSettingCaretAfterImg: function() {
       return isIE();
@@ -6826,7 +6826,7 @@ wysihtml5.dom.replaceWithChildNodes = function(node) {
  * Sandbox for executing javascript, parsing css styles and doing dom operations in a secure way
  *
  * Browser Compatibility:
- *  - Secure in MSIE 6+, but only when the user hasn't made changes to his security level "restricted"
+ *  - Secure in MSIE 6+, but only when the ucenter hasn't made changes to his security level "restricted"
  *  - Partially secure in other browsers (Firefox, Opera, Safari, Chrome, ...)
  *
  * Please note that this class can't benefit from the HTML5 sandbox attribute for the following reasons:
@@ -6968,7 +6968,7 @@ wysihtml5.dom.replaceWithChildNodes = function(node) {
      * Callback for when the iframe has finished loading
      */
     _onLoadIframe: function(iframe) {
-      // don't resume when the iframe got unloaded (eg. by removing it from the dom)
+      // don't book when the iframe got unloaded (eg. by removing it from the dom)
       if (!wysihtml5.dom.contains(doc.documentElement, iframe)) {
         return;
       }
@@ -10466,7 +10466,7 @@ wysihtml5.Commands = Base.extend(
     }
   };
 })(wysihtml5);
-;/* In case font size adjustment to any number defined by user is preferred, we cannot use classes and must use inline styles. */
+;/* In case font size adjustment to any number defined by ucenter is preferred, we cannot use classes and must use inline styles. */
 (function(wysihtml5) {
   var REG_EXP = /(\s|^)font-size\s*:\s*[^;\s]+;?/gi;
 
@@ -10566,7 +10566,7 @@ wysihtml5.Commands = Base.extend(
 
   };
 })(wysihtml5);
-;/* In case background adjustment to any color defined by user is preferred, we cannot use classes and must use inline styles. */
+;/* In case background adjustment to any color defined by ucenter is preferred, we cannot use classes and must use inline styles. */
 (function(wysihtml5) {
   var REG_EXP = /(\s|^)background-color\s*:\s*[^;\s]+;?/gi;
 
@@ -12174,7 +12174,7 @@ wysihtml5.views.View = Base.extend(
       this._createWysiwygFormField();
     },
 
-    // Creates hidden field which tells the server after submit, that the user used an wysiwyg editor
+    // Creates hidden field which tells the server after submit, that the ucenter used an wysiwyg editor
     _createWysiwygFormField: function() {
         if (this.textarea.element.form) {
           var hiddenField = document.createElement("input");
@@ -12251,7 +12251,7 @@ wysihtml5.views.View = Base.extend(
         setTimeout(function() { that.focus(true); }, 100);
       }
 
-      // IE sometimes leaves a single paragraph, which can't be removed by the user
+      // IE sometimes leaves a single paragraph, which can't be removed by the ucenter
       if (!browser.clearsContentEditableCorrectly()) {
         wysihtml5.quirks.ensureProperClearing(this);
       }
@@ -12307,7 +12307,7 @@ wysihtml5.views.View = Base.extend(
 
       // Assuming we have the following:
       //  <a href="http://www.google.de">http://www.google.de</a>
-      // If a user now changes the url in the innerHTML we want to make sure that
+      // If a ucenter now changes the url in the innerHTML we want to make sure that
       // it's synchronized with the href attribute (as long as the innerHTML is still a url)
       var // Use a live NodeList to check whether there are any links in the document
           links           = this.sandbox.getDocument().getElementsByTagName("a"),
@@ -12528,7 +12528,7 @@ wysihtml5.views.View = Base.extend(
         wysihtml5.browser.isGecko ?
           "body.placeholder { color: graytext !important; }" :
           "body.placeholder { color: #a9a9a9 !important; }",
-        // Ensure that user see's broken images and can delete them
+        // Ensure that ucenter see's broken images and can delete them
         "img:-moz-broken      { -moz-force-broken-image-icon: 1; height: 24px; width: 24px; }"
       ];
 
@@ -12560,7 +12560,7 @@ wysihtml5.views.View = Base.extend(
         position:         "absolute",
         top:              "-99999px",
         left:             "-99999px",
-        // Don't ask why but temporarily setting -webkit-user-select to none makes the whole thing performing smoother
+        // Don't ask why but temporarily setting -webkit-ucenter-select to none makes the whole thing performing smoother
         WebkitUserSelect: "none"
       }).on(element);
 
@@ -13232,7 +13232,7 @@ wysihtml5.views.View = Base.extend(
     // Whether toolbar is displayed after init by script automatically.
     // Can be set to false if toolobar is set to display only on editable area focus
     showToolbarAfterInit: true,
-    // Whether urls, entered by the user should automatically become clickable-links
+    // Whether urls, entered by the ucenter should automatically become clickable-links
     autoLink:             true,
     // Includes table editing events and cell selection tracking
     handleTables:         true,
@@ -13241,9 +13241,9 @@ wysihtml5.views.View = Base.extend(
     // Object which includes parser rules to apply when html gets cleaned
     // See parser_rules/*.js for examples
     parserRules:          { tags: { br: {}, span: {}, div: {}, p: {} }, classes: {} },
-    // Object which includes parser when the user inserts content via copy & paste. If null parserRules will be used instead
+    // Object which includes parser when the ucenter inserts content via copy & paste. If null parserRules will be used instead
     pasteParserRulesets: null,
-    // Parser method to use when the user inserts content
+    // Parser method to use when the ucenter inserts content
     parser:               wysihtml5.dom.parse,
     // Class name which should be set on the contentEditable element in the created sandbox iframe, can be styled via the 'stylesheets' option
     composerClassName:    "wysihtml5-editor",
@@ -13575,7 +13575,7 @@ wysihtml5.views.View = Base.extend(
       for (; i<length; i++) {
         field = fields[i];
 
-        // Never change elements where the user is currently typing in
+        // Never change elements where the ucenter is currently typing in
         if (field === focusedElement) {
           continue;
         }
@@ -14088,7 +14088,7 @@ wysihtml5.views.View = Base.extend(
 
       for (; i<length; i++) {
         field = fields[i];
-        // Never change elements where the user is currently typing in
+        // Never change elements where the ucenter is currently typing in
         if (field === focusedElement) {
           continue;
         }

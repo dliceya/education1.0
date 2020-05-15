@@ -4,8 +4,10 @@
     <file url="file://$PROJECT_DIR$/bishe-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bishe-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bishe-govern-center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bishe-govern-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bishe-model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bishe-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bishe-service-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bishe-service-ucenter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bishe-service-ucenter-auth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bisheUi" charset="UTF-8" />

@@ -612,7 +612,7 @@ KeyTable = function ( oInit )
 
 	/*
 	 * Function: _fnClick
-	 * Purpose:  Focus on the element that has been clicked on by the user
+	 * Purpose:  Focus on the element that has been clicked on by the ucenter
 	 * Returns:  -
 	 * Inputs:   event:e - click event
 	 */
@@ -642,7 +642,7 @@ KeyTable = function ( oInit )
 	 */
 	function _fnKey ( e )
 	{
-		/* If user or system has blocked KeyTable from doing anything, just ignore this event */
+		/* If ucenter or system has blocked KeyTable from doing anything, just ignore this event */
 		if ( _that.block || !_bKeyCapture )
 		{
 			return true;

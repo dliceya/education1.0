@@ -46,7 +46,7 @@
 
 		return this;
 	};
-	//Globally expose the defaults to allow for user updating/changing
+	//Globally expose the defaults to allow for ucenter updating/changing
 	Chart.defaults = {
 		global: {
 			// Boolean - Whether to animate the chart
@@ -449,9 +449,9 @@
 				}
 				//We can fit in double the amount of scale points on the scale
 				else{
-					//If user has declared ints only, and the step value isn't a decimal
+					//If ucenter has declared ints only, and the step value isn't a decimal
 					if (integersOnly && rangeOrderOfMagnitude >= 0){
-						//If the user has said integers only, we need to check that making the scale more granular wouldn't make it a float
+						//If the ucenter has said integers only, we need to check that making the scale more granular wouldn't make it a float
 						if(stepValue/2 % 1 === 0){
 							stepValue /=2;
 							numberOfSteps = Math.round(graphRange/stepValue);
@@ -522,7 +522,7 @@
 					"');}return p.join('');"
 				);
 
-				// Provide some basic currying to the user
+				// Provide some basic currying to the ucenter
 				return data ? fn( data ) : fn;
 			}
 			return tmpl(templateString,valuesObject);
@@ -962,7 +962,7 @@
 					chartInstance.draw(easeDecimal, stepDecimal, animationObject.currentStep);
 				};
 				
-				// user events
+				// ucenter events
 				animation.onAnimationProgress = this.options.onAnimationProgress;
 				animation.onAnimationComplete = this.options.onAnimationComplete;
 				
@@ -1389,8 +1389,8 @@
 		easing: "", // the easing to use for this animation
 		render: null, // render function used by the animation framework
 		
-		onAnimationProgress: null, // user specified callback to fire on each step of the animation 
-		onAnimationComplete: null, // user specified callback to fire when the animation finishes
+		onAnimationProgress: null, // ucenter specified callback to fire on each step of the animation
+		onAnimationComplete: null, // ucenter specified callback to fire when the animation finishes
 	});
 	
 	Chart.Tooltip = Chart.Element.extend({

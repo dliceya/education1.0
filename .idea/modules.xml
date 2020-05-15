@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/bishe-api.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/bishe-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/bishe-common.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/bishe-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bishe-api/bishe-api.iml" filepath="$PROJECT_DIR$/bishe-api/bishe-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bishe-common/bishe-common.iml" filepath="$PROJECT_DIR$/bishe-common/bishe-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/bishe-govern-center/bishe-govern-center.iml" filepath="$PROJECT_DIR$/bishe-govern-center/bishe-govern-center.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/bishe-model.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/bishe-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bishe-govern-gateway/bishe-govern-gateway.iml" filepath="$PROJECT_DIR$/bishe-govern-gateway/bishe-govern-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bishe-model/bishe-model.iml" filepath="$PROJECT_DIR$/bishe-model/bishe-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bishe-service-system/bishe-service-system.iml" filepath="$PROJECT_DIR$/bishe-service-system/bishe-service-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/bishe-service-ucenter/bishe-service-ucenter.iml" filepath="$PROJECT_DIR$/bishe-service-ucenter/bishe-service-ucenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml" filepath="$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/bisheUi.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/bisheUi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bisheUi/bisheUi.iml" filepath="$PROJECT_DIR$/bisheUi/bisheUi.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/education1.0.iml" filepath="$PROJECT_DIR$/.idea/education1.0.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../test/xc-framework-parent/utils.iml" filepath="$PROJECT_DIR$/../test/xc-framework-parent/utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bisheUi/parent (2).iml" filepath="$PROJECT_DIR$/bisheUi/parent (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
     </modules>
   </component>
 </project>

@@ -11,9 +11,8 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LoginRequest extends RequestData {
-
     String username;
     String password;
+    String uuid;
     String verifycode;
-
 }

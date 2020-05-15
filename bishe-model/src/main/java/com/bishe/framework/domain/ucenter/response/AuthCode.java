@@ -14,7 +14,10 @@ public enum AuthCode implements ResultCode {
     AUTH_LOGIN_ERROR(false,23006,"登陆过程出现异常请尝试重新操作！"),
     AUTH_LOGIN_APPLYTOKEN_FAIL(false,23007,"申请令牌失败！ 请与系统管理员联系：admin.dlice@bishe.com" ),
     AUTH_LOGIN_TOKEN_SAVEFAIL(false,23008,"存储令牌失败！ 请与系统管理员联系：admin.dlice@bishe.com"),
-    AUTH_LOGOUT_FAIL(false,23008,"退出失败！");
+    AUTH_LOGOUT_FAIL(false,23008,"退出失败！"),
+    REDIS_ERROR(false,66666,"Redis通信失败，请携带此信息联系网站管理员！"),
+    AUTH_LOGIN_CODE_EXPIRE(false,23010,"验证码已过期！"),
+    AUTH_LOGIN_CODE_ERROR(false, 23009, "验证码错误！");
 
     //操作代码
     @ApiModelProperty(value = "操作是否成功", example = "true", required = true)

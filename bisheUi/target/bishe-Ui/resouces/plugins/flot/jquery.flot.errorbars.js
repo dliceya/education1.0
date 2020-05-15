@@ -44,7 +44,7 @@ error-bars on X and asymmetric on Y would be:
 
 By default no end caps are drawn. Setting upperCap and/or lowerCap to "-" will
 draw a small cap perpendicular to the error bar. They can also be set to a
-user-defined drawing function, with (ctx, x, y, radius) as parameters, as eg.
+ucenter-defined drawing function, with (ctx, x, y, radius) as parameters, as eg.
 
 	function drawSemiCircle( ctx, x, y, radius ) {
 		ctx.beginPath();

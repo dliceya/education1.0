@@ -32,11 +32,11 @@ public class CustomUserAuthenticationConverter extends DefaultUserAuthentication
             UserDetails userDetails = userDetailsService.loadUserByUsername(name);
             userJwt = (UserJwt) userDetails;
         }
-        response.put("name", userJwt.getName());
-        response.put("id", userJwt.getId());
+        response.put("username", userJwt.getUsername());
+        response.put("uid", userJwt.getUid());
         response.put("power", userJwt.getPower());
-        response.put("companyId", userJwt.getCompanyId());
-        response.put("companyId",userJwt.getCompanyId());
+        response.put("pid", userJwt.getPid());
+        response.put("qq",userJwt.getQq());
         if (authentication.getAuthorities() != null && !authentication.getAuthorities().isEmpty()) {
             response.put("authorities", AuthorityUtils.authorityListToSet(authentication.getAuthorities()));
         }

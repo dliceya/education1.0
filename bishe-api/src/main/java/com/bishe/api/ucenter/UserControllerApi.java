@@ -25,10 +25,8 @@ public interface UserControllerApi {
     public UserResult addUser(BsUser bsUser);
 
     @ApiOperation("用户登录接口")
-    @ApiImplicitParams({
-            @ApiImplicitParam(name="ucenter",value = "登录信息",required=true,paramType="Json"
-             ,dataType="User{userName, Password}")
-    })
-    public UserResult login(BsUser bsUser);
+    public UserResult login(BsUser loginBsUser);
+
+
 
 }

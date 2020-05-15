@@ -11,11 +11,11 @@ import org.springframework.web.client.RestTemplate;
 
 
 @EnableFeignClients
-//@EntityScan("com.xuecheng.framework.domain.ucenter")//扫描实体类
 @EntityScan("com.bishe.framework.domain.ucenter")
 @ComponentScan(basePackages={"com.bishe.api"})//扫描接口
 @ComponentScan(basePackages={"com.bishe.framework"})//扫描common下的所有类
 @ComponentScan(basePackages={"com.bishe.auth"})
+@ComponentScan("com.bishe.auth")
 @SpringBootApplication
 public class UcenterAuthApplication {
     public static void main(String[] args) {

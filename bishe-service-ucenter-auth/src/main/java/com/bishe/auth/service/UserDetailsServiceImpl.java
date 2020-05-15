@@ -1,7 +1,8 @@
 package com.bishe.auth.service;
 
 import com.bishe.auth.client.UserClient;
-import com.bishe.framework.domain.ucenter.BsUserExt;
+import com.bishe.framework.domain.ucenter.ext.BsUserExt;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.security.core.Authentication;
@@ -14,6 +15,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.oauth2.provider.ClientDetails;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 @Primary
@@ -47,13 +51,23 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         String password =userExt.getPassword();
         //用户权限，这里暂时使用静态数据，最终会从数据库读取
         //从数据库获取权限
+        //List<BsMenu> permissions = userExt.getPermissions();
+        List<String> permissionList = new ArrayList<>();
+
+        //permissions.forEach(item -> permissionList.add(item);
+
+        permissionList.add("getuserext");
+        //将权限串中间已逗号隔开
+        String permissionString = StringUtils.join(permissionList.toArray(), ",");
+
         UserJwt userDetails = new UserJwt(userExt.getUsername(),
                 userExt.getPassword(),
-                AuthorityUtils.commaSeparatedStringToAuthorityList("test, dlice"));
-        userDetails.setId(userExt.getUid());
-        userDetails.setCompanyId(userExt.getPid());//所属企业
-        userDetails.setName(userExt.getUsername());//用户名称
-        userDetails.setPower(userExt.getPassword());
+                AuthorityUtils.commaSeparatedStringToAuthorityList(permissionString));
+        userDetails.setUid(userExt.getUid());
+        userDetails.setUsername(userExt.getUsername());
+        userDetails.setPid(userExt.getPid());
+        userDetails.setQq(userExt.getQq());
+        userDetails.setPower("test");
        /* UserDetails userDetails = new org.springframework.security.core.userdetails.User(username,
                 password,
                 AuthorityUtils.commaSeparatedStringToAuthorityList(""));*/

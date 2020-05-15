@@ -141,7 +141,7 @@ ZeroClipboard_TableTools.Client.prototype = {
 	action: 'copy', // action to perform
 	handCursorEnabled: true, // whether to show hand cursor, or default pointer cursor
 	cssEffects: true, // enable CSS mouse effects on dom container
-	handlers: null, // user event handlers
+	handlers: null, // ucenter event handlers
 	sized: false,
 
 	glue: function(elem, title) {
@@ -315,7 +315,7 @@ ZeroClipboard_TableTools.Client.prototype = {
 	},
 
 	addEventListener: function(eventName, func) {
-		// add user event listener for event
+		// add ucenter event listener for event
 		// event types: load, queueStart, fileStart, fileComplete, queueComplete, progress, error, cancel
 		eventName = eventName.toString().toLowerCase().replace(/^on/, '');
 		if (!this.handlers[eventName]) {
@@ -424,7 +424,7 @@ ZeroClipboard_TableTools.Client.prototype = {
 					window[func](this, args);
 				}
 			} // foreach event handler defined
-		} // user defined handler for event
+		} // ucenter defined handler for event
 	}
 
 };
@@ -604,7 +604,7 @@ TableTools = function( oDT, oOpts )
 		},
 
 		/**
-		 * Store of the user input customisation object
+		 * Store of the ucenter input customisation object
 		 *  @property custom
 		 *  @type	 object
 		 *  @default  {}
@@ -677,7 +677,7 @@ TableTools = function( oDT, oOpts )
 			"hidden": [],
 
 			/**
-			 * The information display saying telling the user about the print display
+			 * The information display saying telling the ucenter about the print display
 			 *  @property message
 			 *  @type	 node
 			 *  @default  null
@@ -1071,7 +1071,7 @@ TableTools.prototype = {
 	 *  @param {object} [oConfig={}] Configuration for the print view
 	 *  @param {boolean} [oConfig.bShowAll=false] Show all rows in the table if true
 	 *  @param {string} [oConfig.sInfo] Information message, displayed as an overlay to the
-	 *    user to let them know what the print view is.
+	 *    ucenter to let them know what the print view is.
 	 *  @param {string} [oConfig.sMessage] HTML string to show at the top of the document - will
 	 *    be included in the printed document.
 	 */
@@ -1094,8 +1094,8 @@ TableTools.prototype = {
 
 
 	/**
-	 * Show a message to the end user which is nicely styled
-	 *  @param {string} message The HTML string to show to the user
+	 * Show a message to the end ucenter which is nicely styled
+	 *  @param {string} message The HTML string to show to the ucenter
 	 *  @param {int} time The duration the message is to be shown on screen for (mS)
 	 */
 	"fnInfo": function ( message, time ) {
@@ -1175,7 +1175,7 @@ TableTools.prototype = {
 
 
 	/**
-	 * Take the user defined settings and the default settings and combine them.
+	 * Take the ucenter defined settings and the default settings and combine them.
 	 *  @method  _fnCustomiseSettings
 	 *  @param   {Object} oOpts Same as TableTools constructor
 	 *  @returns void
@@ -1193,7 +1193,7 @@ TableTools.prototype = {
 		/* We can use the table node from comparisons to group controls */
 		this.dom.table = this.s.dt.nTable;
 
-		/* Clone the defaults and then the user options */
+		/* Clone the defaults and then the ucenter options */
 		this.s.custom = $.extend( {}, TableTools.DEFAULTS, oOpts );
 
 		/* Flash file location */
@@ -1209,7 +1209,7 @@ TableTools.prototype = {
 		this.s.select.postSelected = this.s.custom.fnRowSelected;
 		this.s.select.postDeselected = this.s.custom.fnRowDeselected;
 
-		// Backwards compatibility - allow the user to specify a custom class in the initialiser
+		// Backwards compatibility - allow the ucenter to specify a custom class in the initialiser
 		if ( this.s.custom.sSelectedClass )
 		{
 			this.classes.select.row = this.s.custom.sSelectedClass;
@@ -1223,10 +1223,10 @@ TableTools.prototype = {
 
 
 	/**
-	 * Take the user input arrays and expand them to be fully defined, and then add them to a given
+	 * Take the ucenter input arrays and expand them to be fully defined, and then add them to a given
 	 * DOM element
 	 *  @method  _fnButtonDefinations
-	 *  @param {array} buttonSet Set of user defined buttons
+	 *  @param {array} buttonSet Set of ucenter defined buttons
 	 *  @param {node} wrapper Node to add the created buttons to
 	 *  @returns void
 	 *  @private 
@@ -1479,7 +1479,7 @@ TableTools.prototype = {
 		this.dom.collection.collection = nHidden;
 		this.dom.collection.background = nBackground;
 
-		/* This results in a very small delay for the end user but it allows the animation to be
+		/* This results in a very small delay for the end ucenter but it allows the animation to be
 		 * much smoother. If you don't want the animation, then the setTimeout can be removed
 		 */
 		setTimeout( function () {
@@ -1558,7 +1558,7 @@ TableTools.prototype = {
 					if ( e.shiftKey ) {
 
 						$(dt.nTBody)
-							.css( '-moz-user-select', 'none' )
+							.css( '-moz-ucenter-select', 'none' )
 							.one('selectstart.DTTT_Select', 'tr', function () {
 								return false;
 							} );
@@ -1566,7 +1566,7 @@ TableTools.prototype = {
 				} );
 
 				$(dt.nTBody).on( 'mouseup.DTTT_Select', 'tr', function(e) {
-					$(dt.nTBody).css( '-moz-user-select', '' );
+					$(dt.nTBody).css( '-moz-ucenter-select', '' );
 				} );
 			}
 
@@ -2452,7 +2452,7 @@ TableTools.prototype = {
 		/* Print class can be used for styling */
 		$(document.body).addClass( this.classes.print.body );
 
-		/* Show information message to let the user know what is happening */
+		/* Show information message to let the ucenter know what is happening */
 		if ( oConfig.sInfo !== "" )
 		{
 			this.fnInfo( oConfig.sInfo, 3000 );
@@ -2486,7 +2486,7 @@ TableTools.prototype = {
 
 
 	/**
-	 * Printing is finished, resume normal display
+	 * Printing is finished, book normal display
 	 *  @method  _fnPrintEnd
 	 *  @param   {Event} e Event object
 	 *  @returns void

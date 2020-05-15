@@ -2,13 +2,13 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <artifactId>parent</artifactId>
+    <artifactId>bisheUi</artifactId>
     <groupId>com.bishe</groupId>
     <version>1.0-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
 
     <packaging>war</packaging>
-    <name>bishe-Ui Maven Webapp</name>
+    <name>bishe-Ui</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 

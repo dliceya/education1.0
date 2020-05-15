@@ -37,3 +37,5 @@ eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZGxpY2UifQ.ZT8qKOFaMgFnTB-yKAFI
     "scope": "app",
     "jti": "aadc4e4e-34b2-4df1-9ea8-a2576f20924a"
 }
+
+nohup java -jar bishe-govern-center-2.jar >/dev/null 2>&1 & ^C

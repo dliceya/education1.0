@@ -1,6 +1,7 @@
 package com.bishe.api.auth;
 
 import com.bishe.framework.domain.ucenter.request.LoginRequest;
+import com.bishe.framework.domain.ucenter.response.JwtResult;
 import com.bishe.framework.domain.ucenter.response.LoginResult;
 import com.bishe.framework.model.response.ResponseResult;
 import io.swagger.annotations.Api;
@@ -13,4 +14,7 @@ public interface AuthControllerApi {
 
     @ApiOperation("退出")
     public ResponseResult logout();
+
+    @ApiOperation("查询用户jwt令牌")
+    public JwtResult userJwt();
 }

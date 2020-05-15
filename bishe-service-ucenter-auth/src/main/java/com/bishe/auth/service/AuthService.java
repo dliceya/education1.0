@@ -1,6 +1,7 @@
 package com.bishe.auth.service;
 
 import com.alibaba.fastjson.JSON;
+import com.bishe.framework.client.BsServiceList;
 import com.bishe.framework.domain.ucenter.ext.AuthToken;
 import com.bishe.framework.domain.ucenter.response.AuthCode;
 import com.bishe.framework.exception.ExceptionCast;
@@ -68,27 +69,14 @@ public class AuthService {
         return authToken;
     }
 
-    /**
-     * 将令牌存储到Redis
-     * @param jti       用户身份令牌
-     * @param content   AuthToken对象的内容
-     * @param ttl       过期时间
-     * @return          是否存储成功
-     */
-    private boolean saveToken(String jti, String content, long ttl){
 
-        String key = "user_token:" + jti;
-        redisTemplate.boundValueOps(key).set(content, ttl, TimeUnit.SECONDS);
-        Long expire = redisTemplate.getExpire(key, TimeUnit.SECONDS);
 
-        return expire > 0;
-    }
 
     //申请令牌
     private AuthToken applyToken(String username, String password, String clientId, String clientSecret){
         //请求Spring Security申请令牌
         //从Eureka中获取认证服务的地址
-        ServiceInstance choose = loadBalancerClient.choose("bs-service-ucenter-auth");
+        ServiceInstance choose = loadBalancerClient.choose(BsServiceList.Bs_SERVICE_UCENTER_AUTH);
         URI uri = choose.getUri();
         //令牌的申请地址 40400/auth/oauth/token
 
@@ -117,21 +105,21 @@ public class AuthService {
                 }
             }
         });
-
         //调用Oauth服务来验证用户身份，验证通过则颁发令牌
         ResponseEntity<Map> exchange = restTemplate.exchange(authUri, HttpMethod.POST, httpEntity, Map.class);
 
         //申请令牌信息
         Map bodyMap = exchange.getBody();
-        if(bodyMap.get("access_token") == null ||
+        if(bodyMap == null ||
+                bodyMap.get("access_token") == null ||
                 bodyMap.get("refresh_token") == null||
-                bodyMap.get("jti") == null){
+                bodyMap.get("jti") == null) {
 
             if(bodyMap != null && bodyMap.get("error_description") != null){
                 String errorDescription = (String) bodyMap.get("error_description");
-                if(errorDescription.indexOf("UserDetailService return null") >= 0){
-                    ExceptionCast.cast(AuthCode.AUTH_ACCOUNT_NOTEXISTS);
-                }else if(errorDescription.indexOf("坏的凭证") >= 0){
+                if(errorDescription.contains("UserDetailsService returned null")){
+                    ExceptionCast.cast(AuthCode.AUTH_CREDENTIAL_ERROR);
+                }else if(errorDescription.contains("坏的凭证")){
                     ExceptionCast.cast(AuthCode.AUTH_CREDENTIAL_ERROR);
                 }
             }
@@ -150,5 +138,67 @@ public class AuthService {
         //将串进行base64编码
         byte[] encode = Base64Utils.encode(string.getBytes());
         return "Basic "+new String(encode);
+    }
+
+    /**
+     * 将令牌存储到Redis
+     * @param jti       用户身份令牌
+     * @param content   AuthToken对象的内容
+     * @param ttl       过期时间
+     * @return          是否存储成功
+     */
+    private boolean saveToken(String jti, String content, long ttl){
+
+        String key = "user_token:" + jti;
+        redisTemplate.boundValueOps(key).set(content, ttl, TimeUnit.SECONDS);
+        Long expire = redisTemplate.getExpire(key, TimeUnit.SECONDS);
+
+        return expire > 0;
+    }
+
+    /**
+     * 从Redis取出用户jwt令牌
+     * @param jti
+     * @return
+     */
+    public AuthToken getUserToken(String jti){
+        String key = "user_token:" + jti;
+        String value = redisTemplate.opsForValue().get(key);
+        try {
+            AuthToken authToken = JSON.parseObject(value, AuthToken.class);
+            return authToken;
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+
+    }
+
+    /**
+     * 删除Token
+     * @param jti 用户短令牌
+     * @return
+     */
+    public void delToken(String jti){
+        String key = "user_token:" + jti;
+        redisTemplate.delete(key);
+        Long expire = redisTemplate.getExpire(key, TimeUnit.SECONDS);
+    }
+
+    /**
+     * 检查验证码是否正确
+     * @param uuid 登录标志
+     * @param code 用户输入
+     */
+    public void checkCode(String uuid, String code){
+        String verifyKey = "verifyKey" + uuid;
+        Long expire = redisTemplate.getExpire(verifyKey, TimeUnit.SECONDS);
+        if(expire <= 0){
+            ExceptionCast.cast(AuthCode.AUTH_LOGIN_CODE_EXPIRE);
+        }
+        String redisCode = redisTemplate.opsForValue().get(verifyKey);
+        if(redisCode == null || !redisCode.equals(code)){
+            ExceptionCast.cast(AuthCode.AUTH_LOGIN_CODE_ERROR);
+        }
     }
 }

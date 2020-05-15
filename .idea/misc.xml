@@ -20,6 +20,9 @@
         <option value="$PROJECT_DIR$/bishe-parent/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-govern-center/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-service-ucenter/pom.xml" />
+        <option value="$PROJECT_DIR$/xc-govern-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/bishe-govern-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/bishe-service-system/pom.xml" />
       </list>
     </option>
   </component>
