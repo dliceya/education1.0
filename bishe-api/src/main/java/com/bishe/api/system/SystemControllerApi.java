@@ -1,6 +1,6 @@
 package com.bishe.api.system;
 
-import com.bishe.framework.domain.department.response.QueryDeptTreeResponse;
+import com.bishe.framework.domain.system.response.QueryDeptTreeResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
@@ -8,5 +8,5 @@ import io.swagger.annotations.ApiOperation;
 public interface SystemControllerApi {
 
     @ApiOperation("获取部门列表")
-    public QueryDeptTreeResponse getDeptTree();
+    QueryDeptTreeResponse getDeptTree();
 }

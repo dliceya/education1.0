@@ -13,7 +13,6 @@
         <option value="$PROJECT_DIR$/bishe-common/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-model/pom.xml" />
         <option value="$PROJECT_DIR$/utils/pom.xml" />
-        <option value="$PROJECT_DIR$/bisheUi/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-api/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-service-manage-user/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml" />

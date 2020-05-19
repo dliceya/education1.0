@@ -10,7 +10,6 @@
       <module fileurl="file://$PROJECT_DIR$/bishe-service-system/bishe-service-system.iml" filepath="$PROJECT_DIR$/bishe-service-system/bishe-service-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/bishe-service-ucenter/bishe-service-ucenter.iml" filepath="$PROJECT_DIR$/bishe-service-ucenter/bishe-service-ucenter.iml" />
       <module fileurl="file://$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml" filepath="$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml" />
-      <module fileurl="file://$PROJECT_DIR$/bisheUi/bisheUi.iml" filepath="$PROJECT_DIR$/bisheUi/bisheUi.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/education1.0.iml" filepath="$PROJECT_DIR$/.idea/education1.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/bisheUi/parent (2).iml" filepath="$PROJECT_DIR$/bisheUi/parent (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />

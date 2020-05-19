@@ -1,3 +1,4 @@
+com\bishe\api\system\SystemControllerApi.class
 com\bishe\api\auth\captchaInfoControllerApi.class
 com\bishe\api\ucenter\UcenterControllerApi.class
 com\bishe\api\Swagger2Configuration.class
