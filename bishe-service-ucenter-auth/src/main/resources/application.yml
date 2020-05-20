@@ -45,11 +45,11 @@ spring:
       webStatFilter:
         enabled: true
 auth:
-  tokenValiditySeconds: 1200  #token存储到redis的过期时间
+  tokenValiditySeconds: 1800  #token存储到redis的过期时间
   clientId: XcWebApp
   clientSecret: XcWebApp
   cookieDomain: localhost #www.dlice.xyz
-  cookieMaxAge: -1
+  cookieMaxAge: 1800
 encrypt:
   key-store:
     location: classpath:/xc.keystore

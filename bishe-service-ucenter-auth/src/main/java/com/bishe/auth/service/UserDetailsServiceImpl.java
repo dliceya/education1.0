@@ -16,7 +16,6 @@ import org.springframework.security.oauth2.provider.ClientDetails;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -49,14 +48,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         }
         //取出正确密码（hash值）
         String password =userExt.getPassword();
-        //用户权限，这里暂时使用静态数据，最终会从数据库读取
-        //从数据库获取权限
-        //List<BsMenu> permissions = userExt.getPermissions();
-        List<String> permissionList = new ArrayList<>();
 
-        //permissions.forEach(item -> permissionList.add(item);
-
-        permissionList.add("getuserext");
+        List<String> permissionList = userExt.getPermissions();
         //将权限串中间已逗号隔开
         String permissionString = StringUtils.join(permissionList.toArray(), ",");
 

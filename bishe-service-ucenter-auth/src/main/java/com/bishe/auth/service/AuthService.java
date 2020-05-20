@@ -197,7 +197,7 @@ public class AuthService {
             ExceptionCast.cast(AuthCode.AUTH_LOGIN_CODE_EXPIRE);
         }
         String redisCode = redisTemplate.opsForValue().get(verifyKey);
-        if(redisCode == null || !redisCode.equals(code)){
+        if(redisCode == null || !redisCode.equalsIgnoreCase(code)){
             ExceptionCast.cast(AuthCode.AUTH_LOGIN_CODE_ERROR);
         }
     }

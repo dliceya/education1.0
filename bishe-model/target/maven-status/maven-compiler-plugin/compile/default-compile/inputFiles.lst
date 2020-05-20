@@ -1,6 +1,8 @@
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\response\QueryBookResponse.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\QueryPageResponse.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\Menu.java
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\request\AuthRequest.java
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\Permission.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\request\QueryRoleRequest.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\OnlineUser.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\LoginResult.java
