@@ -31,6 +31,9 @@ public class IpUtil {
         if ("0:0:0:0:0:0:0:1".equals(ip)) {
             ip = "127.0.0.1";
         }
+        if(ip == null){
+            ip = "127.0.0.1";
+        }
         if (ip.split(",").length > 1) {
             ip = ip.split(",")[0];
         }
@@ -45,7 +48,7 @@ public class IpUtil {
      */
     public static String getAddrFromIp(String ip) {
         if ("127.0.0.1".equals(ip)) {
-            ip = "127.0.0.1";
+            return "本地登录";
         }
         String info = "";
         try {

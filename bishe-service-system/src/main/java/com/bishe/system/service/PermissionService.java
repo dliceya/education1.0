@@ -51,6 +51,7 @@ public class PermissionService implements IPermissionService {
 
         boolean flag = true;
 
+        //从新写入前端接收的用户权限
         for(String pid: pids){
             if(!perDao.auth(rid, pid)){
                 flag = false;

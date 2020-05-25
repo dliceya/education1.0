@@ -2,9 +2,9 @@ F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\syste
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\QueryPageResponse.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\Menu.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\request\AuthRequest.java
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\response\OnlineResponse.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\Permission.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\request\QueryRoleRequest.java
-F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\OnlineUser.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\LoginResult.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\equipment\Equipment.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\UserResult.java
@@ -12,6 +12,7 @@ F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\syste
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\response\QueryEquipResult.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\department\Department.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\book\Book.java
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\Online.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\response\QueryRecordResponse.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\Role.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\JwtResult.java
@@ -20,6 +21,7 @@ F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucent
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\request\QueryPageRequest.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\AuthCode.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\record\Record.java
+F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\request\OnlineRequest.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\ext\BsUserExt.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\request\MenuListRequest.java
 F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\request\LoginRequest.java

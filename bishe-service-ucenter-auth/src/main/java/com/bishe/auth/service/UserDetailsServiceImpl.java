@@ -2,6 +2,8 @@ package com.bishe.auth.service;
 
 import com.bishe.auth.client.UserClient;
 import com.bishe.framework.domain.ucenter.ext.BsUserExt;
+import com.bishe.framework.domain.ucenter.response.AuthCode;
+import com.bishe.framework.exception.ExceptionCast;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
@@ -46,13 +48,17 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         if(userExt == null){
             return null;
         }
-        //取出正确密码（hash值）
-        String password =userExt.getPassword();
+        //
+        if("0".equals(userExt.getStatus())){
+            ExceptionCast.cast(AuthCode.AUTH_USERNAME_EXPIRE);
+        }
 
+        //获取用户权限密码
         List<String> permissionList = userExt.getPermissions();
         //将权限串中间已逗号隔开
         String permissionString = StringUtils.join(permissionList.toArray(), ",");
 
+        //生成用户jwt令牌实体
         UserJwt userDetails = new UserJwt(userExt.getUsername(),
                 userExt.getPassword(),
                 AuthorityUtils.commaSeparatedStringToAuthorityList(permissionString));

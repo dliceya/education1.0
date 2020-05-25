@@ -24,6 +24,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/")
@@ -44,6 +45,9 @@ public class AuthController implements AuthControllerApi {
     @Override
     @RequestMapping("/userlogin")
     public LoginResult login(@RequestBody LoginRequest loginRequest) {
+        //获取请求request实例
+        HttpServletRequest request = ((ServletRequestAttributes) Objects.requireNonNull(RequestContextHolder.getRequestAttributes())).getRequest();
+
         if(loginRequest == null || StringUtils.isEmpty(loginRequest.getUsername())){
             ExceptionCast.cast(AuthCode.AUTH_USERNAME_NONE);
         }
@@ -56,7 +60,7 @@ public class AuthController implements AuthControllerApi {
         String username = loginRequest.getUsername();
         String password = loginRequest.getPassword();
         //申请令牌
-        AuthToken authToken = authService.login(username, password, clientId, ClientSecret);
+        AuthToken authToken = authService.login(username, password, clientId, ClientSecret, request);
 
         String jti = authToken.getJti();
         this.saveCookie(jti);

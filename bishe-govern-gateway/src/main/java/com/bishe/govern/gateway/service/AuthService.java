@@ -18,7 +18,7 @@ public class AuthService {
 
     //从请求头中获取用户令牌
     public String getJwtFromHeader(HttpServletRequest request){
-        String authorization = request.getHeader("Authorization");
+        String authorization = request.getHeader("User-Agent");
 
         if(StringUtils.isEmpty(authorization)){
             return null;

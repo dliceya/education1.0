@@ -7,6 +7,7 @@ import lombok.ToString;
 @ToString
 public enum AuthCode implements ResultCode {
     AUTH_USERNAME_NONE(false,23001,"请输入账号！"),
+    AUTH_USERNAME_EXPIRE(false,23001,"该账户已被停用！"),
     AUTH_PASSWORD_NONE(false,23002,"请输入密码！"),
     AUTH_VERIFYCODE_NONE(false,23003,"请输入验证码！"),
     AUTH_ACCOUNT_NOTEXISTS(false,23004,"账号不存在！"),

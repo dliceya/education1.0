@@ -1,10 +1,14 @@
 package com.bishe.auth.service;
 
 import com.alibaba.fastjson.JSON;
+import com.bishe.auth.dao.loginDao;
 import com.bishe.framework.client.BsServiceList;
+import com.bishe.framework.domain.system.Online;
 import com.bishe.framework.domain.ucenter.ext.AuthToken;
 import com.bishe.framework.domain.ucenter.response.AuthCode;
 import com.bishe.framework.exception.ExceptionCast;
+import com.bishe.framework.utils.Detils;
+import com.bishe.framework.utils.IpUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -21,9 +25,12 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.DefaultResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.net.URI;
+import java.util.Calendar;
 import java.util.Map;
+import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -33,10 +40,15 @@ public class AuthService {
     RestTemplate restTemplate;
 
     @Autowired
+    loginDao dao;
+
+    @Autowired
     LoadBalancerClient loadBalancerClient;
 
     @Autowired
     StringRedisTemplate redisTemplate;
+
+    private Calendar timeUtils = Calendar.getInstance(TimeZone.getTimeZone("GMT+8:00"));
 
     @Value("${auth.tokenValiditySeconds}")
     int tokenValiditySeconds;
@@ -49,15 +61,20 @@ public class AuthService {
      * @param clientSecret  客户端密码
      * @return  如果有返回则登录成功，否则抛出异常
      */
-    public AuthToken login(String username, String password, String clientId, String clientSecret) {
+    public AuthToken login(String username, String password, String clientId, String clientSecret, HttpServletRequest request) {
 
         AuthToken authToken = this.applyToken(username, password, clientId, clientSecret);
+
+        String header = request.getHeader("User-Agent");
         if(authToken == null){
             ExceptionCast.cast(AuthCode.AUTH_LOGIN_APPLYTOKEN_FAIL);
         }
-
         //用户身份令牌
         String jti = authToken.getJti();
+        //创建新线程写入登录日志
+
+        this.writelog(username, request, jti);
+
         //存储到Redis中的内容
         String jsonString = JSON.toJSONString(authToken);
 
@@ -69,8 +86,20 @@ public class AuthService {
         return authToken;
     }
 
-
-
+    private void writelog(String username, HttpServletRequest request, String jti) {
+        dao.setLoginIp(username, IpUtil.getIp(request));
+        Online user = new Online();
+        user.setIpaddr(IpUtil.getIp(request));
+        user.setLoginLocation(IpUtil.getAddrFromIp(IpUtil.getIp(request)));
+        user.setBrowser(Detils.getBrowserName(request));
+        user.setOs(Detils.getOsName(request));
+        user.setTokenId(jti);
+        user.setStatus("1");
+        user.setLoginTime(timeUtils.getTime());
+        user.setUserName(username);
+        user.setDeptName("测试部门");
+        dao.writeLog(user);
+    }
 
     //申请令牌
     private AuthToken applyToken(String username, String password, String clientId, String clientSecret){
