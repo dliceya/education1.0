@@ -20,7 +20,6 @@ public class EquipmentController {
         this.equipService = equipService;
     }
 
-
     //新增装备信息.
     @PreAuthorize("hasAuthority('system:equip:add')")
     @RequestMapping("/addEquip")

@@ -1,0 +1,13 @@
+com\bishe\auth\service\UserDetailsServiceImpl.class
+com\bishe\auth\service\AuthService$1.class
+com\bishe\auth\UcenterAuthApplication.class
+com\bishe\auth\config\WebSecurityConfig.class
+com\bishe\auth\config\CustomUserAuthenticationConverter.class
+com\bishe\auth\controller\AuthController.class
+com\bishe\auth\config\AuthorizationServerConfig.class
+com\bishe\auth\controller\captchaInfoController.class
+com\bishe\auth\service\UserJwt.class
+com\bishe\auth\service\AuthService.class
+com\bishe\auth\client\UserClient.class
+com\bishe\auth\dao\loginDao.class
+com\bishe\auth\config\CorsConfig.class

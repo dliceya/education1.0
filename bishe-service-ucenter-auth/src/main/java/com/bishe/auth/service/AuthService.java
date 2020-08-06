@@ -97,7 +97,6 @@ public class AuthService {
         user.setStatus("1");
         user.setLoginTime(timeUtils.getTime());
         user.setUserName(username);
-        user.setDeptName("测试部门");
         dao.writeLog(user);
     }
 
@@ -204,17 +203,6 @@ public class AuthService {
     }
 
     /**
-     * 删除Token
-     * @param jti 用户短令牌
-     * @return
-     */
-    public void delToken(String jti){
-        String key = "user_token:" + jti;
-        redisTemplate.delete(key);
-        Long expire = redisTemplate.getExpire(key, TimeUnit.SECONDS);
-    }
-
-    /**
      * 检查验证码是否正确
      * @param uuid 登录标志
      * @param code 用户输入
@@ -229,5 +217,31 @@ public class AuthService {
         if(redisCode == null || !redisCode.equalsIgnoreCase(code)){
             ExceptionCast.cast(AuthCode.AUTH_LOGIN_CODE_ERROR);
         }
+    }
+
+    /**
+     * 用户退出逻辑
+     * @param uid 用户短令牌
+     */
+    public void logout(String uid) {
+        //Redis删除用户令牌
+        this.delToken(uid);
+
+        this.updateOnlineStatus(uid);
+    }
+
+    private void updateOnlineStatus(String uid) {
+        dao.updateOnlineStatus(false ,uid);
+    }
+
+    /**
+     * 删除Token
+     * @param jti 用户短令牌
+     * @return
+     */
+    private void delToken(String jti){
+        String key = "user_token:" + jti;
+        redisTemplate.delete(key);
+        Long expire = redisTemplate.getExpire(key, TimeUnit.SECONDS);
     }
 }

@@ -32,7 +32,7 @@ public class IpUtil {
             ip = "127.0.0.1";
         }
         if(ip == null){
-            ip = "127.0.0.1";
+            ip = "UNKNOWN";
         }
         if (ip.split(",").length > 1) {
             ip = ip.split(",")[0];

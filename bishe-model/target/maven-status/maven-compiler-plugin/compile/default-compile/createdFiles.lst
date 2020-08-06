@@ -1,5 +1,6 @@
 com\bishe\framework\domain\system\response\QueryDeptTreeResponse.class
 com\bishe\framework\domain\ucenter\request\LoginRequest.class
+com\bishe\framework\domain\system\response\Upload.class
 com\bishe\framework\domain\system\response\QueryRoleResult.class
 com\bishe\framework\domain\system\Online.class
 com\bishe\framework\domain\system\request\MenuListRequest.class

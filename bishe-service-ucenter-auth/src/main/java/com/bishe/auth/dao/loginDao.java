@@ -17,4 +17,8 @@ public interface loginDao {
             " #{loginLocation}, #{browser}, #{os}, #{loginTime}, #{status})")
     void writeLog(Online user);
 
+    //用户退出，更新登录日志状态
+    @Update("update online set status = #{status} where tokenId = #{jti}")
+    void updateOnlineStatus(boolean status, String jti);
+
 }

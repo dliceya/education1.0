@@ -75,8 +75,8 @@ public class AuthController implements AuthControllerApi {
 
         String uid = getTokenFromCookie();
         //删除Redis中的Token
-        authService.delToken(uid);
 
+        authService.logout(uid);
         //清除Cookie
         this.clearCookie(uid);
         return new ResponseResult(CommonCode.SUCCESS);
