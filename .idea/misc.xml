@@ -10,10 +10,6 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/bishe-common/pom.xml" />
-        <option value="$PROJECT_DIR$/bishe-model/pom.xml" />
-        <option value="$PROJECT_DIR$/utils/pom.xml" />
-        <option value="$PROJECT_DIR$/bishe-api/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-service-manage-user/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-parent/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-govern-center/pom.xml" />
@@ -22,6 +18,11 @@
         <option value="$PROJECT_DIR$/bishe-service-system/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/bishe-service-ucenter/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
