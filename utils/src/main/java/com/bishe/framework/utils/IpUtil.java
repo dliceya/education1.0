@@ -52,7 +52,9 @@ public class IpUtil {
         }
         String info = "";
         try {
-            URL url = new URL("http://ip.taobao.com/service/getIpInfo.php?ip=" + ip);
+
+
+            URL url = new URL("http://ip.fbisb.com/GetInfo.php?type=geoip&ip=" + ip);
             HttpURLConnection htpcon = (HttpURLConnection) url.openConnection();
             htpcon.setRequestMethod("GET");
             htpcon.setDoOutput(true);
@@ -69,7 +71,7 @@ public class IpUtil {
             }
             bufferedReader.close();
             JSONObject obj = (JSONObject) JSON.parse(temp.toString());
-            if (obj.getIntValue("code") == 0) {
+            if (obj.getIntValue("status") == 1) {
                 JSONObject data = obj.getJSONObject("data");
                 info += data.getString("country") + " ";
                 info += data.getString("region") + " ";

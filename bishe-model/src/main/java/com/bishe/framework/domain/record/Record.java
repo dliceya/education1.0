@@ -1,8 +1,9 @@
 package com.bishe.framework.domain.record;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 public class Record {
@@ -13,7 +14,8 @@ public class Record {
     private String bid;
 
     //创建时间
-    private Date createTime;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime createTime;
 
     //装备id
     private String eid;
@@ -34,13 +36,16 @@ public class Record {
     private String user;
 
     //修改标记
-    private Date updateTime;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime updateTime;
 
     //开始日期
-    private Date beginTime;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime  beginTime;
 
     //结束日期
-    private Date endTime;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime  endTime;
 
 
 }

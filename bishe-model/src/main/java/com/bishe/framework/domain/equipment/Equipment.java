@@ -1,9 +1,10 @@
 package com.bishe.framework.domain.equipment;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.ToString;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @ToString
@@ -24,10 +25,12 @@ public class Equipment {
     private String byId;
 
     //交付日期
-    private Date deliverTime;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime deliverTime;
 
     //生产日期
-    private Date createTime;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime  createTime;
 
     //部门id
     private int life;

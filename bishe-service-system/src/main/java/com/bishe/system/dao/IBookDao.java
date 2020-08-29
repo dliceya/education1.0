@@ -4,7 +4,7 @@ import com.bishe.framework.domain.book.Book;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
@@ -25,5 +25,5 @@ public interface IBookDao {
 
     //更新履历本名
     @Update("update bishe_book set bookName=#{name}, updateTime=#{updateTime} where bid=#{bid}")
-    int updateBook(String bid, String name, Date updateTime);
+    int updateBook(String bid, String name, LocalDateTime updateTime);
 }

@@ -11,14 +11,16 @@ import com.bishe.system.service.impl.IRecordService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.time.*;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 @Service
 public class RecordService implements IRecordService {
 
     private final RecordDao RecordDao;
 
-    private Calendar timeUtils = Calendar.getInstance(TimeZone.getTimeZone("GMT+8:00"));
     public RecordService(RecordDao RecordDao) {
         this.RecordDao = RecordDao;
     }
@@ -68,8 +70,8 @@ public class RecordService implements IRecordService {
     public ResponseResult addRecord(Record record) {
         ResponseResult result;
 
-        record.setCreateTime(timeUtils.getTime());
-        record.setUpdateTime(timeUtils.getTime());
+        record.setCreateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
+        record.setUpdateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         record.setTime(0);
         record.setRid(IdUtils.simpleUUID());
 
@@ -98,12 +100,15 @@ public class RecordService implements IRecordService {
         ResponseResult result;
         Record record = RecordDao.getRecord(rid);
 
-        Date endTime = timeUtils.getTime();
+        LocalDateTime endTime = LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai")));
+        LocalDateTime beginTime = record.getBeginTime();
 
-        Date beginTime = record.getBeginTime();
-        long time = (endTime.getTime() - beginTime.getTime()) / (1000 * 24 * 60 * 60);
-        if(time <= 0) time = 1;
-        if(RecordDao.endStatus(time,endTime,rid)){
+        Period period = Period.between(beginTime.toLocalDate(), endTime.toLocalDate());
+
+        int days = period.getDays();
+
+        if(days <= 0) days = 1;
+        if(RecordDao.endStatus(days,endTime,rid)){
             result = new ResponseResult(CommonCode.SUCCESS);
         }else result = new ResponseResult(CommonCode.FAIL);
 

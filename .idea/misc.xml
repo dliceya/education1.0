@@ -15,13 +15,12 @@
         <option value="$PROJECT_DIR$/utils/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-api/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-service-manage-user/pom.xml" />
-        <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-parent/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-govern-center/pom.xml" />
-        <option value="$PROJECT_DIR$/bishe-service-ucenter/pom.xml" />
         <option value="$PROJECT_DIR$/xc-govern-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-govern-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/bishe-service-system/pom.xml" />
+        <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml" />
       </list>
     </option>
   </component>

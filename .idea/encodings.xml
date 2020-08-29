@@ -10,8 +10,8 @@
     <file url="file://$PROJECT_DIR$/bishe-service-system" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bishe-service-ucenter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bishe-service-ucenter-auth" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/bisheUi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../education1/bishe-service-ucenter-auth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../xcEdu/xc-service-ucenter-auth" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

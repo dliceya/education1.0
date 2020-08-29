@@ -1,0 +1,19 @@
+<changelist name="授权管理完成" date="1596713949527" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/授权管理完成/shelved.patch" />
+  <option name="DESCRIPTION" value="授权管理完成" />
+  <binary>
+    <option name="BEFORE_PATH" value="bishe-common/target/bishe-common.jar" />
+    <option name="AFTER_PATH" value="bishe-common/target/bishe-common.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/授权管理完成/bishe-common.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="bishe-model/target/bishe-model.jar" />
+    <option name="AFTER_PATH" value="bishe-model/target/bishe-model.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/授权管理完成/bishe-model.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="utils/target/utils.jar" />
+    <option name="AFTER_PATH" value="utils/target/utils.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/授权管理完成/utils.jar" />
+  </binary>
+</changelist>

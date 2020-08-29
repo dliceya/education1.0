@@ -1,4 +1,4 @@
-//package com.bishe.auth;
+//package com.bishe.config;
 //
 //import org.junit.Test;
 //import org.junit.runner.RunWith;
@@ -31,11 +31,11 @@
 //    @Test
 //    public void testClient(){
 //        //从Eureka中获取认证服务的地址
-//        //ServiceInstance choose = loadBalancerClient.choose("xc-server-ucenter-auth");
+//        //ServiceInstance choose = loadBalancerClient.choose("xc-server-ucenter-config");
 //        //URI uri = choose.getUri();
-//        //令牌的申请地址 40400/auth/oauth/token
+//        //令牌的申请地址 40400/config/oauth/token
 //
-//        String authUri = "http://localhost:40400/auth/oauth/token";//uri + "/auth/oauth/token"
+//        String authUri = "http://localhost:40400/auth/oauth/token";//uri + "/config/oauth/token"
 //
 //        //定义header
 //        LinkedMultiValueMap<String, String> header = new LinkedMultiValueMap<>();

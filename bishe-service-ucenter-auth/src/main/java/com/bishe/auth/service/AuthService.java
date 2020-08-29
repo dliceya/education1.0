@@ -1,18 +1,14 @@
 package com.bishe.auth.service;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.bishe.auth.dao.loginDao;
-import com.bishe.framework.client.BsServiceList;
 import com.bishe.framework.domain.system.Online;
 import com.bishe.framework.domain.ucenter.ext.AuthToken;
 import com.bishe.framework.domain.ucenter.response.AuthCode;
 import com.bishe.framework.exception.ExceptionCast;
 import com.bishe.framework.utils.Detils;
-import com.bishe.framework.utils.IpUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -27,31 +23,38 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
-import java.net.URI;
-import java.util.Calendar;
+import java.time.Clock;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Map;
-import java.util.TimeZone;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
 
 @Service
 public class AuthService {
 
-    @Autowired
+    private final
     RestTemplate restTemplate;
 
-    @Autowired
+    private final
     loginDao dao;
 
-    @Autowired
-    LoadBalancerClient loadBalancerClient;
+    @Value("${auth.cookieMaxAge}")
+    int cookieMaxAge;
 
-    @Autowired
+    private final
     StringRedisTemplate redisTemplate;
-
-    private Calendar timeUtils = Calendar.getInstance(TimeZone.getTimeZone("GMT+8:00"));
 
     @Value("${auth.tokenValiditySeconds}")
     int tokenValiditySeconds;
+
+    public AuthService(/*LoadBalancerClient loadBalancerClient, */RestTemplate restTemplate, loginDao dao, StringRedisTemplate redisTemplate) {
+        //this.loadBalancerClient = loadBalancerClient;
+        this.restTemplate = restTemplate;
+        this.dao = dao;
+        this.redisTemplate = redisTemplate;
+    }
 
     /**
      * 申请用户身份令牌，
@@ -61,7 +64,7 @@ public class AuthService {
      * @param clientSecret  客户端密码
      * @return  如果有返回则登录成功，否则抛出异常
      */
-    public AuthToken login(String username, String password, String clientId, String clientSecret, HttpServletRequest request) {
+    public AuthToken login(String username, String password, String clientId, String clientSecret, HttpServletRequest request, String loginIp) {
 
         AuthToken authToken = this.applyToken(username, password, clientId, clientSecret);
 
@@ -73,7 +76,7 @@ public class AuthService {
         String jti = authToken.getJti();
         //创建新线程写入登录日志
 
-        this.writelog(username, request, jti);
+        this.writelog(username, request, jti, loginIp);
 
         //存储到Redis中的内容
         String jsonString = JSON.toJSONString(authToken);
@@ -83,32 +86,78 @@ public class AuthService {
         if(!isSave){
             ExceptionCast.cast(AuthCode.AUTH_LOGIN_TOKEN_SAVEFAIL);
         }
+
+        logoutTimer(jti);
         return authToken;
     }
 
-    private void writelog(String username, HttpServletRequest request, String jti) {
-        dao.setLoginIp(username, IpUtil.getIp(request));
+    //用户登录20分钟后更新用户登录状态
+    private void logoutTimer(String jti) {
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                dao.updateOnlineStatus("0", jti);
+            }
+        }, cookieMaxAge * 1000);
+    }
+
+    //写入用户登录日志
+    private void writelog(String username, HttpServletRequest request, String jti, String loginIp) {
+        dao.setLoginIp(username, loginIp);
         Online user = new Online();
-        user.setIpaddr(IpUtil.getIp(request));
-        user.setLoginLocation(IpUtil.getAddrFromIp(IpUtil.getIp(request)));
+        user.setIpaddr(loginIp);
+        user.setDeptName(dao.getDeptNameByuser(username));
+        user.setLoginLocation(getLocation(loginIp));
         user.setBrowser(Detils.getBrowserName(request));
         user.setOs(Detils.getOsName(request));
         user.setTokenId(jti);
         user.setStatus("1");
-        user.setLoginTime(timeUtils.getTime());
+        user.setLoginTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         user.setUserName(username);
         dao.writeLog(user);
+    }
+
+    //获取用户登录地址
+    private String getLocation(String ip){
+
+        String authUri = "http://ip.fbisb.com/GetInfo.php?type=geoip&ip=" + ip;
+        String ret;
+
+        HttpEntity<MultiValueMap<String, String>> httpEntity = new HttpEntity<>(null, null);
+
+        restTemplate.setErrorHandler(new DefaultResponseErrorHandler(){
+            @Override
+            public void handleError(ClientHttpResponse response) throws IOException {
+                if(response.getRawStatusCode()!=400 && response.getRawStatusCode()!=401){
+                    super.handleError(response);
+                }
+            }
+        });
+
+        String exchange = restTemplate.getForObject(authUri, String.class);
+
+        JSONObject location = JSONObject.parseObject(exchange);
+
+        if(location.getString("status") == "0"){
+            ret =  "UNKNOW";
+        }else {
+            ret =  location.getString("country") + " " +
+                    location.getString("region") + " " +
+                    location.getString("city");
+        }
+
+        return ret;
     }
 
     //申请令牌
     private AuthToken applyToken(String username, String password, String clientId, String clientSecret){
         //请求Spring Security申请令牌
         //从Eureka中获取认证服务的地址
-        ServiceInstance choose = loadBalancerClient.choose(BsServiceList.Bs_SERVICE_UCENTER_AUTH);
-        URI uri = choose.getUri();
+//        ServiceInstance choose = loadBalancerClient.choose(BsServiceList.Bs_SERVICE_UCENTER_AUTH);
+//        URI uri = choose.getUri();
         //令牌的申请地址 40400/auth/oauth/token
 
-        String authUri = uri + "/auth/oauth/token";
+        String authUri = "http://127.0.0.1:40400/auth/oauth/token";
 
         //定义header
         LinkedMultiValueMap<String, String> header = new LinkedMultiValueMap<>();
@@ -151,7 +200,7 @@ public class AuthService {
                     ExceptionCast.cast(AuthCode.AUTH_CREDENTIAL_ERROR);
                 }
             }
-            return null;
+             return null;
         }
 
         AuthToken authToken = new AuthToken();
@@ -231,7 +280,7 @@ public class AuthService {
     }
 
     private void updateOnlineStatus(String uid) {
-        dao.updateOnlineStatus(false ,uid);
+        dao.updateOnlineStatus("0" ,uid);
     }
 
     /**

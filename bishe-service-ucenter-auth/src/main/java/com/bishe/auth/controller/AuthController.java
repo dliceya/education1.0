@@ -14,10 +14,7 @@ import com.bishe.framework.utils.CookieUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -60,7 +57,8 @@ public class AuthController implements AuthControllerApi {
         String username = loginRequest.getUsername();
         String password = loginRequest.getPassword();
         //申请令牌
-        AuthToken authToken = authService.login(username, password, clientId, ClientSecret, request);
+        String loginIp = getCookieByName("ip");
+        AuthToken authToken = authService.login(username, password, clientId, ClientSecret, request, loginIp);
 
         String jti = authToken.getJti();
         this.saveCookie(jti);
@@ -71,14 +69,18 @@ public class AuthController implements AuthControllerApi {
 
     @Override
     @GetMapping("/logout")
-    public ResponseResult logout() {
-
-        String uid = getTokenFromCookie();
+    public ResponseResult logout(@RequestParam String token) {
+        String uid = "";
+        if(StringUtils.isEmpty(token)) {
+            uid = getCookieByName("uid");
+            this.clearCookie(uid);
+        }else {
+            uid = token;
+        }
         //删除Redis中的Token
 
         authService.logout(uid);
-        //清除Cookie
-        this.clearCookie(uid);
+
         return new ResponseResult(CommonCode.SUCCESS);
     }
 
@@ -86,7 +88,7 @@ public class AuthController implements AuthControllerApi {
     @GetMapping("/userjwt")
     public JwtResult userJwt() {
         //取出Cookie中的用户身份令牌
-        String uid = getTokenFromCookie();
+        String uid = getCookieByName("uid");
         if(uid == null){
             return new JwtResult(CommonCode.FAIL, null);
         }
@@ -104,12 +106,12 @@ public class AuthController implements AuthControllerApi {
 
 
     //取出Cookie中的身份令牌
-    private String getTokenFromCookie(){
+    private String getCookieByName(String name){
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
 
-        Map<String, String> map = CookieUtil.readCookie(request, "uid");
-        if(map != null && map.get("uid") != null){
-            return map.get("uid");
+        Map<String, String> map = CookieUtil.readCookie(request, name);
+        if(map != null && map.get(name) != null){
+            return map.get(name);
         }
         return null;
     }

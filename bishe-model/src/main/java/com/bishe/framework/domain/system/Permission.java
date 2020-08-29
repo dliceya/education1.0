@@ -1,8 +1,9 @@
 package com.bishe.framework.domain.system;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -18,10 +19,12 @@ public class Permission {
     private String permissionName;
 
     //更新时间
-    private Date updateTime;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime updateTime;
 
     //创建时间
-    private Date createTime;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime createTime;
 
     //说明
     private String remark;

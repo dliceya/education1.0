@@ -35,7 +35,7 @@
             <version>1.1.1</version>
         </dependency>
 
-<!--本地依赖包-->
+        <!--本地依赖包-->
         <dependency>
             <groupId>com.bishe</groupId>
             <artifactId>bishe-common</artifactId>
@@ -56,13 +56,9 @@
             <artifactId>utils</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-<!--Spring Cloud-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
+        <!--Spring Cloud-->
 
-<!--权限认证-->
+        <!--权限认证-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-security</artifactId>
@@ -71,12 +67,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>
-<!--web容器-->
+        <!--web容器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-<!--数据支持-->
+        <!--数据支持-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -97,7 +93,7 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
-<!--        远程调用工具-->
+        <!--        远程调用工具-->
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>

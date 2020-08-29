@@ -10,15 +10,15 @@ import com.bishe.system.dao.IEquipDao;
 import com.bishe.system.service.impl.IEquipService;
 import org.springframework.stereotype.Service;
 
-import java.util.Calendar;
+import java.time.Clock;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
-import java.util.TimeZone;
 
 @Service
 public class EquipService implements IEquipService {
 
     private final IEquipDao iEquipDao;
-    private Calendar timeUtils = Calendar.getInstance(TimeZone.getTimeZone("GMT+8:00"));
 
     public EquipService(IEquipDao iEquipDao) {
         this.iEquipDao = iEquipDao;
@@ -53,7 +53,7 @@ public class EquipService implements IEquipService {
     public ResponseResult addEquip(Equipment equipment) {
         ResponseResult result;
 
-        equipment.setDeliverTime(timeUtils.getTime());
+        equipment.setDeliverTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         equipment.setEid(IdUtils.simpleUUID());
 
         if(iEquipDao.addEquip(equipment) > 0){

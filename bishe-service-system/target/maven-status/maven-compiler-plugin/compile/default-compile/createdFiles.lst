@@ -1,0 +1,8 @@
+com\bishe\system\controller\MenuController.class
+com\bishe\SystemManageApplication.class
+com\bishe\manage_user\controller\UcenterController.class
+com\bishe\config\WebSocketConfig.class
+com\bishe\system\controller\PermissionController.class
+com\bishe\system\dao\IMenuDao.class
+com\bishe\system\service\impl\IMenuService.class
+com\bishe\system\service\MenuService.class

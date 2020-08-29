@@ -1,7 +1,6 @@
 package com.bishe.auth.config;
 
 import com.bishe.auth.service.UserJwt;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,8 +13,12 @@ import java.util.Map;
 
 @Component
 public class CustomUserAuthenticationConverter extends DefaultUserAuthenticationConverter {
-    @Autowired
+    private final
     UserDetailsService userDetailsService;
+
+    public CustomUserAuthenticationConverter(UserDetailsService userDetailsService) {
+        this.userDetailsService = userDetailsService;
+    }
 
     @Override
     public Map<String, ?> convertUserAuthentication(Authentication authentication) {

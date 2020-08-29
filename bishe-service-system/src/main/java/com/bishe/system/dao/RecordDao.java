@@ -5,7 +5,7 @@ import com.bishe.framework.domain.system.request.QueryRecordRequest;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Mapper
@@ -56,7 +56,7 @@ public interface RecordDao {
 
     //结束履历状态
     @Update("update bishe_record set time=#{time}, endTime = #{endTime} where rid=#{rid}")
-    boolean endStatus(long time, Date endTime, String rid);
+    boolean endStatus(long time, LocalDateTime endTime, String rid);
 
     @Select("select * from bishe_record where rid = #{rid}")
     Record getRecord(String rid);

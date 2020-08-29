@@ -1,0 +1,1157 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ArtifactsWorkspaceSettings\">\r\n    <artifacts-to-build>\r\n      <artifact name=\"bisheUi:war exploded\" />\r\n    </artifacts-to-build>\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"495f26a0-73b3-48a5-abc3-5a908cda1e68\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/libraries/Maven__eu_bitwalker_UserAgentUtils_1_20.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/OnlineRequest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/response/OnlineResponse.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/Detils.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-govern-center/src/main/resources/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-govern-center/src/main/resources/application.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/service/AuthService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/service/AuthService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/OnlineUser.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/response/AuthCode.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/response/AuthCode.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-model/target/bishe-model.jar\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-model/target/bishe-model.jar\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/PermissionService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/PermissionService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/target/classes/application.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/target/classes/application.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/target/classes/com/bishe/auth/service/UserDetailsServiceImpl.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/target/classes/com/bishe/auth/service/UserDetailsServiceImpl.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/bishe-service-ucenter/bishe-service-ucenter.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/bishe-service-ucenter/bishe-service-ucenter.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/utils/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/utils/pom.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/utils/target/utils.jar\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/utils/target/utils.jar\" afterDir=\"false\" />\r\n    </list>\r\n    <ignored path=\"$PROJECT_DIR$/bishe-parent/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bishe-common/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bishe-model/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/utils/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bisheUi/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bishe-api/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/sdasd/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bishe-service-manage-user/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/../xcEdu/xc-service-ucenter-auth/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bishe-service-ucenter-auth/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bishe-govern-center/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bishe-service-ucenter/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/xc-govern-gateway/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bishe-govern-gateway/target/\" />\r\n    <ignored path=\"$PROJECT_DIR$/bishe-service-system/target/\" />\r\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CodeInsightWorkspaceSettings\">\r\n    <option name=\"optimizeImportsOnTheFly\" value=\"true\" />\r\n  </component>\r\n  <component name=\"CompilerWorkspaceConfiguration\">\r\n    <option name=\"MAKE_PROJECT_ON_SAVE\" value=\"true\" />\r\n  </component>\r\n  <component name=\"DefaultGradleProjectSettings\">\r\n    <option name=\"isMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"FileEditorManager\">\r\n    <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\r\n      <file pinned=\"false\" current-in-tab=\"true\">\r\n        <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"328\">\r\n              <caret line=\"109\" column=\"40\" lean-forward=\"true\" selection-start-line=\"109\" selection-start-column=\"40\" selection-end-line=\"109\" selection-end-column=\"40\" />\r\n              <folding>\r\n                <element signature=\"imports\" expanded=\"true\" />\r\n              </folding>\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"247\">\r\n              <caret line=\"22\" column=\"135\" lean-forward=\"true\" selection-start-line=\"22\" selection-start-column=\"122\" selection-end-line=\"22\" selection-end-column=\"135\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/src/main/resources/application.yml\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"228\">\r\n              <caret line=\"12\" column=\"135\" selection-start-line=\"12\" selection-start-column=\"135\" selection-end-line=\"12\" selection-end-column=\"135\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/resources/application.yml\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"171\">\r\n              <caret line=\"11\" column=\"135\" selection-start-line=\"11\" selection-start-column=\"135\" selection-end-line=\"11\" selection-end-column=\"135\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"76\">\r\n              <caret line=\"6\" selection-start-line=\"6\" selection-end-line=\"6\" />\r\n              <folding>\r\n                <element signature=\"imports\" expanded=\"true\" />\r\n              </folding>\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"374\">\r\n              <caret line=\"53\" column=\"9\" selection-start-line=\"53\" selection-start-column=\"9\" selection-end-line=\"53\" selection-end-column=\"9\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"950\">\r\n              <caret line=\"58\" column=\"36\" selection-start-line=\"58\" selection-start-column=\"36\" selection-end-line=\"58\" selection-end-column=\"36\" />\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n      <file pinned=\"false\" current-in-tab=\"false\">\r\n        <entry file=\"file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/Detils.java\">\r\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n            <state relative-caret-position=\"223\">\r\n              <caret line=\"37\" selection-start-line=\"37\" selection-end-line=\"37\" />\r\n              <folding>\r\n                <element signature=\"imports\" expanded=\"true\" />\r\n              </folding>\r\n            </state>\r\n          </provider>\r\n        </entry>\r\n      </file>\r\n    </leaf>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"spring-beans.schema\" />\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FindInProjectRecents\">\r\n    <findStrings>\r\n      <find>./</find>\r\n      <find>xuecheng</find>\r\n      <find>bisheWebApp</find>\r\n      <find>XcWebApp</find>\r\n      <find>xc</find>\r\n      <find>ExceptionCast</find>\r\n      <find>‐</find>\r\n      <find>druid</find>\r\n      <find>cookieMaxAge</find>\r\n      <find>redisTemplate</find>\r\n      <find>saveToken</find>\r\n      <find>tokenValiditySeconds</find>\r\n      <find>userde</find>\r\n      <find>fastUUID</find>\r\n      <find>password</find>\r\n      <find>setLoginDate</find>\r\n      <find>iSystemDao</find>\r\n      <find>delRole</find>\r\n      <find>bishe_menu</find>\r\n      <find>menu</find>\r\n      <find>Online</find>\r\n      <find>setDeptName</find>\r\n      <find>useragentutils</find>\r\n      <find>requestThread</find>\r\n    </findStrings>\r\n    <replaceStrings>\r\n      <replace>../resouces</replace>\r\n      <replace>../resouces/</replace>\r\n      <replace>Bs</replace>\r\n      <replace>-</replace>\r\n      <replace>roleDao</replace>\r\n      <replace>record</replace>\r\n    </replaceStrings>\r\n    <dirStrings>\r\n      <dir>F:\\aaEdu\\education1.0\\bishe-service-ucenter-auth\\src\\main\\java\\com\\bishe\\auth\\config</dir>\r\n      <dir>F:\\aaEdu\\education1.0\\xc-govern-gateway\\src\\main\\java\\com</dir>\r\n    </dirStrings>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"dlice\" />\r\n        <option value=\"dlice &lt;158156325@qq.com&gt;\" />\r\n        <option value=\"Lucas\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"ROOT_SYNC\" value=\"DONT_SYNC\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"AUTO_COMMIT_ON_CHERRY_PICK\" value=\"true\" />\r\n  </component>\r\n  <component name=\"IdeDocumentHistory\">\r\n    <option name=\"CHANGED_PATHS\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/record/Record.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IEquipService.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/EquipService.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/IEquipDao.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/config/WebSecurityConfig.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-api/src/main/java/com/bishe/api/system/bookControllerApi.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-api/src/main/java/com/bishe/api/system/SystemControllerApi.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-api/src/main/java/com/bishe/api/system/BookControllerApi.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/DeptController.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/config/ResourceServerConfig.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/Permission.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/PermissionService.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/test/java/com/bishe/system/service/impl/testISystemService.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Permission.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/authRequest.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/AuthRequest.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IPermissionService.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/MenuController.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/BookController.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/EquipmentController.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/PermissionController.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/RoleController.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/PermissionDao.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/response/AuthCode.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-govern-center/src/main/resources/application.yml\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/online.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/onlineRequest.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/RecordService.java\" />\r\n        <option value=\"$PROJECT_DIR$/utils/pom.xml\" />\r\n        <option value=\"$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/detils.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/controller/UcenterController.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/impl/IUserService.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/OnlineRequest.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/response/OnlineResponse.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/config/ResourceServerConfig.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/dao/impl/IUserDao.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml\" />\r\n        <option value=\"$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/PermissionService.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/UserService.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java\" />\r\n        <option value=\"$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/Detils.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/service/AuthService.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/LogWrite.java\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter/src/main/resources/application.yml\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-system/src/main/resources/application.yml\" />\r\n        <option value=\"$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"LogFilters\">\r\n    <option name=\"FILTER_ERRORS\" value=\"false\" />\r\n    <option name=\"FILTER_WARNINGS\" value=\"false\" />\r\n    <option name=\"FILTER_INFO\" value=\"true\" />\r\n    <option name=\"FILTER_DEBUG\" value=\"true\" />\r\n    <option name=\"CUSTOM_FILTER\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"localRepository\" value=\"G:\\apache-maven-3.5.2\\maven_repository\" />\r\n        <option name=\"mavenHome\" value=\"G:/apache-maven-3.5.2\" />\r\n        <option name=\"usePluginRegistry\" value=\"true\" />\r\n        <option name=\"userSettingsFile\" value=\"G:\\apache-maven-3.5.2\\conf\\settings.xml\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"createModuleGroups\" value=\"true\" />\r\n        <option name=\"createModulesForAggregators\" value=\"false\" />\r\n        <option name=\"importAutomatically\" value=\"true\" />\r\n        <option name=\"jdkForImporter\" value=\"12\" />\r\n        <option name=\"vmOptionsForImporter\" value=\"-Xmx2048m\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"MavenProjectNavigator\">\r\n    <treeState>\r\n      <expand>\r\n        <path>\r\n          <item name=\"\" type=\"16c1761:MavenProjectsStructure$RootNode\" />\r\n          <item name=\"bishe-service-ucenter-auth\" type=\"9519ce18:MavenProjectsStructure$ProjectNode\" />\r\n        </path>\r\n        <path>\r\n          <item name=\"\" type=\"16c1761:MavenProjectsStructure$RootNode\" />\r\n          <item name=\"bishe-service-ucenter-auth\" type=\"9519ce18:MavenProjectsStructure$ProjectNode\" />\r\n          <item name=\"Lifecycle\" type=\"58874e2:MavenProjectsStructure$LifecycleNode\" />\r\n        </path>\r\n        <path>\r\n          <item name=\"\" type=\"16c1761:MavenProjectsStructure$RootNode\" />\r\n          <item name=\"utils\" type=\"9519ce18:MavenProjectsStructure$ProjectNode\" />\r\n        </path>\r\n      </expand>\r\n      <select />\r\n    </treeState>\r\n  </component>\r\n  <component name=\"MavenRunner\">\r\n    <option name=\"delegateBuildToMaven\" value=\"true\" />\r\n    <option name=\"vmOptions\" value=\"-DarchetypeCatalog=internal -Dfile.encoding=GBK\" />\r\n  </component>\r\n  <component name=\"ProjectFrameBounds\" extendedState=\"6\">\r\n    <option name=\"y\" value=\"554\" />\r\n    <option name=\"width\" value=\"512\" />\r\n    <option name=\"height\" value=\"277\" />\r\n  </component>\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectView\">\r\n    <navigator proportions=\"\" version=\"1\">\r\n      <foldersAlwaysOnTop value=\"true\" />\r\n    </navigator>\r\n    <panes>\r\n      <pane id=\"PackagesPane\" />\r\n      <pane id=\"ProjectPane\">\r\n        <subPane>\r\n          <expand>\r\n            <path>\r\n              <item name=\"education1.0\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"education1.0\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"education1.0\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"education1.0\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"bishe-service-ucenter-auth\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"education1.0\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"education1.0\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"utils\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"education1.0\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"education1.0\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"utils\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"education1.0\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"education1.0\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"utils\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"main\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"education1.0\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"education1.0\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"utils\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"main\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"java\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n            <path>\r\n              <item name=\"education1.0\" type=\"b2602c69:ProjectViewProjectNode\" />\r\n              <item name=\"education1.0\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"utils\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"main\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"java\" type=\"462c0819:PsiDirectoryNode\" />\r\n              <item name=\"utils\" type=\"462c0819:PsiDirectoryNode\" />\r\n            </path>\r\n          </expand>\r\n          <select />\r\n        </subPane>\r\n      </pane>\r\n      <pane id=\"Scope\">\r\n        <subPane subId=\"Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope\">\r\n          <expand>\r\n            <path>\r\n              <item name=\"education1.0\" type=\"3d21c010:ScopeViewTreeModel$ProjectNode\" />\r\n              <item name=\"bishe-govern-center\" type=\"2674bda8:ScopeViewTreeModel$GroupNode\" />\r\n            </path>\r\n          </expand>\r\n          <select />\r\n        </subPane>\r\n      </pane>\r\n    </panes>\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"ExpandSpringBootJavaOptionsPanel\" value=\"true\" />\r\n    <property name=\"RequestMappingsPanelOrder0\" value=\"0\" />\r\n    <property name=\"RequestMappingsPanelOrder1\" value=\"1\" />\r\n    <property name=\"RequestMappingsPanelWidth0\" value=\"75\" />\r\n    <property name=\"RequestMappingsPanelWidth1\" value=\"75\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../ruoyi\" />\r\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\r\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.30223125\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.editor\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateClassDialog.RecentsKey\">\r\n      <recent name=\"com.bishe.framework.domain.ucenter.ext\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"com.bishe.auth\" />\r\n    </key>\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"F:\\aaEdu\\education1.0\\bishe-service-ucenter-auth\\src\\main\\resources\" />\r\n      <recent name=\"F:\\aaEdu\\education1.0\\bishe-service-ucenter\\src\\main\\resources\" />\r\n      <recent name=\"F:\\aaEdu\\education1.0\\utils\\src\\main\\java\\com\\bishe\\framework\\utils\" />\r\n      <recent name=\"F:\\aaEdu\\education1.0\\bishe-common\\src\\main\\java\\com\\bishe\\framework\" />\r\n      <recent name=\"F:\\aaEdu\\education1.0\\bishe-govern-center\\src\\main\\resources\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.bishe.framework.utils\" />\r\n      <recent name=\"com.bishe.framework.domain.ucenter\" />\r\n      <recent name=\"com.bishe.manage_user.config\" />\r\n      <recent name=\"com.bishe.framework.client\" />\r\n      <recent name=\"com.bishe.framework.domain.ucenter.response\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"F:\\aaEdu\\education1.0\\bishe-service-system\" />\r\n      <recent name=\"F:\\aaEdu\\education1.0\\bishe-service-ucenter-auth\\src\\test\\java\" />\r\n      <recent name=\"F:\\aaEdu\\education1.0\\KeyStore\" />\r\n      <recent name=\"F:\\aaEdu\\education1.0\\bishe-service-ucenter-auth\\src\\main\\resources\" />\r\n      <recent name=\"F:\\aaEdu\\education1.0\\bisheUi\\src\\main\\webapp\\signin\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunDashboard\">\r\n    <option name=\"configurationTypes\">\r\n      <set>\r\n        <option value=\"SpringBootApplicationConfigurationType\" />\r\n      </set>\r\n    </option>\r\n    <option name=\"ruleStates\">\r\n      <list>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\r\n        </RuleState>\r\n        <RuleState>\r\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\r\n        </RuleState>\r\n      </list>\r\n    </option>\r\n    <option name=\"contentProportion\" value=\"0.18032786\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Spring Boot.GatewayApplication\">\r\n    <configuration name=\"testISystemService.testPermissionService\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"bishe-service-system\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.bishe.system.service.impl.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.bishe.system.service.impl\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.bishe.system.service.impl.testISystemService\" />\r\n      <option name=\"METHOD_NAME\" value=\"testPermissionService\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"testISystemService.testgetDeptTree\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"bishe-service-system\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.bishe.system.service.impl.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.bishe.system.service.impl\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.bishe.system.service.impl.testISystemService\" />\r\n      <option name=\"METHOD_NAME\" value=\"testgetDeptTree\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"testIUserService.testgetDeptTree\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"bishe-service-system\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.bishe.system.service.impl.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.bishe.system.service.impl\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.bishe.system.service.impl.testIUserService\" />\r\n      <option name=\"METHOD_NAME\" value=\"testgetDeptTree\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GatewayApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"bishe-govern-gateway\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.bishe.govern.gateway.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.bishe.govern.gateway.GatewayApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GovernCenterApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"bishe-govern-center\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.bishe.govern.center.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.bishe.govern.center.GovernCenterApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SystemManageApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"bishe-service-system\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.bishe.system.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.bishe.system.SystemManageApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"UcenterAuthApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"bishe-service-ucenter-auth\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.bishe.auth.UcenterAuthApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"UserManageApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"bishe-service-ucenter\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.bishe.manage_user.UserManageApplication\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Tomcat 8.5.432\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"Tomcat 8.5.432\" ALTERNATIVE_JRE_ENABLED=\"false\" nameIsGenerated=\"true\">\r\n      <option name=\"OPEN_IN_BROWSER_URL\" value=\"http://localhost:80\" />\r\n      <option name=\"UPDATE_ON_FRAME_DEACTIVATION\" value=\"true\" />\r\n      <option name=\"UPDATE_CLASSES_ON_FRAME_DEACTIVATION\" value=\"true\" />\r\n      <deployment>\r\n        <artifact name=\"bisheUi:war exploded\">\r\n          <settings>\r\n            <option name=\"CONTEXT_PATH\" value=\"\" />\r\n          </settings>\r\n        </artifact>\r\n      </deployment>\r\n      <server-settings>\r\n        <option name=\"BASE_DIRECTORY_NAME\" value=\"Tomcat_8_5_432_education1_0_2\" />\r\n        <option name=\"HTTP_PORT\" value=\"80\" />\r\n      </server-settings>\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat Catalina\" />\r\n      <predefined_log_file id=\"Tomcat Manager\" />\r\n      <predefined_log_file id=\"Tomcat Host Manager\" />\r\n      <predefined_log_file id=\"Tomcat Localhost Access\" />\r\n      <RunnerSettings RunnerId=\"Debug\">\r\n        <option name=\"DEBUG_PORT\" value=\"57661\" />\r\n      </RunnerSettings>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n        <option name=\"BuildArtifacts\" enabled=\"true\">\r\n          <artifact name=\"bisheUi:war exploded\" />\r\n        </option>\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"Tomcat 8.5.432\" ALTERNATIVE_JRE_ENABLED=\"false\">\r\n      <option name=\"OPEN_IN_BROWSER_URL\" value=\"http://localhost:80/ui\" />\r\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\r\n      <deployment />\r\n      <server-settings>\r\n        <option name=\"BASE_DIRECTORY_NAME\" value=\"_education1_0\" />\r\n        <option name=\"HTTP_PORT\" value=\"80\" />\r\n      </server-settings>\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat Catalina\" />\r\n      <predefined_log_file id=\"Tomcat Manager\" />\r\n      <predefined_log_file id=\"Tomcat Host Manager\" />\r\n      <predefined_log_file id=\"Tomcat Localhost Access\" />\r\n      <RunnerSettings RunnerId=\"Debug\">\r\n        <option name=\"DEBUG_PORT\" value=\"57661\" />\r\n      </RunnerSettings>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Remote\" ALTERNATIVE_JRE_ENABLED=\"false\">\r\n      <option name=\"LOCAL\" value=\"false\" />\r\n      <deployment />\r\n      <server-settings>\r\n        <data>\r\n          <option name=\"targets\">\r\n            <list>\r\n              <WatchedTargetModelImpl>\r\n                <option name=\"name\" value=\"CONTEXT_XML\" />\r\n                <name>CONTEXT_XML</name>\r\n              </WatchedTargetModelImpl>\r\n              <StagingTargetModelImpl>\r\n                <option name=\"name\" value=\"STAGING\" />\r\n                <name>STAGING</name>\r\n              </StagingTargetModelImpl>\r\n            </list>\r\n          </option>\r\n          <option name=\"transportHostId\" />\r\n        </data>\r\n      </server-settings>\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\r\n      <predefined_log_file enabled=\"true\" id=\"TOMCAT_LOCALHOST_LOG_ID\" />\r\n      <RunnerSettings RunnerId=\"Debug\">\r\n        <option name=\"DEBUG_PORT\" value=\"57671\" />\r\n        <option name=\"LOCAL\" value=\"false\" />\r\n      </RunnerSettings>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"JUnit.testIUserService.testgetDeptTree\" />\r\n      <item itemvalue=\"JUnit.testISystemService.testgetDeptTree\" />\r\n      <item itemvalue=\"JUnit.testISystemService.testPermissionService\" />\r\n      <item itemvalue=\"Spring Boot.UserManageApplication\" />\r\n      <item itemvalue=\"Spring Boot.UcenterAuthApplication\" />\r\n      <item itemvalue=\"Spring Boot.SystemManageApplication\" />\r\n      <item itemvalue=\"Spring Boot.GovernCenterApplication\" />\r\n      <item itemvalue=\"Spring Boot.GatewayApplication\" />\r\n      <item itemvalue=\"Tomcat Server.Tomcat 8.5.432\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Spring Boot.SystemManageApplication\" />\r\n        <item itemvalue=\"Spring Boot.GovernCenterApplication\" />\r\n        <item itemvalue=\"Spring Boot.GatewayApplication\" />\r\n        <item itemvalue=\"JUnit.testISystemService.testPermissionService\" />\r\n        <item itemvalue=\"JUnit.testISystemService.testgetDeptTree\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"495f26a0-73b3-48a5-abc3-5a908cda1e68\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1583815429890</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1583815429890</updated>\r\n      <workItem from=\"1583815431143\" duration=\"1105000\" />\r\n      <workItem from=\"1583816903946\" duration=\"474000\" />\r\n      <workItem from=\"1583817401872\" duration=\"17804000\" />\r\n      <workItem from=\"1584192259080\" duration=\"82000\" />\r\n      <workItem from=\"1584531740062\" duration=\"1394000\" />\r\n      <workItem from=\"1584961100327\" duration=\"887000\" />\r\n      <workItem from=\"1585109835107\" duration=\"9057000\" />\r\n      <workItem from=\"1585120832972\" duration=\"802000\" />\r\n      <workItem from=\"1585136512795\" duration=\"8881000\" />\r\n      <workItem from=\"1585191493901\" duration=\"4931000\" />\r\n      <workItem from=\"1585202351337\" duration=\"5714000\" />\r\n      <workItem from=\"1585208081338\" duration=\"4861000\" />\r\n      <workItem from=\"1585221083237\" duration=\"4921000\" />\r\n      <workItem from=\"1585226022769\" duration=\"1566000\" />\r\n      <workItem from=\"1585227600418\" duration=\"5371000\" />\r\n      <workItem from=\"1585271047204\" duration=\"3769000\" />\r\n      <workItem from=\"1585488150830\" duration=\"2305000\" />\r\n      <workItem from=\"1585570288313\" duration=\"9947000\" />\r\n      <workItem from=\"1585611485779\" duration=\"2575000\" />\r\n      <workItem from=\"1585654266740\" duration=\"10567000\" />\r\n      <workItem from=\"1585699749128\" duration=\"933000\" />\r\n      <workItem from=\"1585741485316\" duration=\"15229000\" />\r\n      <workItem from=\"1585787265659\" duration=\"511000\" />\r\n      <workItem from=\"1585836646308\" duration=\"4132000\" />\r\n      <workItem from=\"1585924665500\" duration=\"4611000\" />\r\n      <workItem from=\"1585965046795\" duration=\"11538000\" />\r\n      <workItem from=\"1585987959404\" duration=\"1022000\" />\r\n      <workItem from=\"1585989020590\" duration=\"11288000\" />\r\n      <workItem from=\"1586052653100\" duration=\"4211000\" />\r\n      <workItem from=\"1586056960058\" duration=\"1890000\" />\r\n      <workItem from=\"1586059073110\" duration=\"566000\" />\r\n      <workItem from=\"1586059722102\" duration=\"165000\" />\r\n      <workItem from=\"1586059935712\" duration=\"13284000\" />\r\n      <workItem from=\"1586084964537\" duration=\"8449000\" />\r\n      <workItem from=\"1586138197041\" duration=\"8910000\" />\r\n      <workItem from=\"1586163732022\" duration=\"8730000\" />\r\n      <workItem from=\"1586172498055\" duration=\"2017000\" />\r\n      <workItem from=\"1586343974762\" duration=\"8657000\" />\r\n      <workItem from=\"1586430248046\" duration=\"15049000\" />\r\n      <workItem from=\"1586477125224\" duration=\"1175000\" />\r\n      <workItem from=\"1586521787300\" duration=\"11456000\" />\r\n      <workItem from=\"1586580467024\" duration=\"6452000\" />\r\n      <workItem from=\"1586587312156\" duration=\"16131000\" />\r\n      <workItem from=\"1586674326965\" duration=\"3578000\" />\r\n      <workItem from=\"1586683626901\" duration=\"12087000\" />\r\n      <workItem from=\"1586958289992\" duration=\"3536000\" />\r\n      <workItem from=\"1587041540089\" duration=\"3060000\" />\r\n      <workItem from=\"1587188185045\" duration=\"8382000\" />\r\n      <workItem from=\"1587271180595\" duration=\"5786000\" />\r\n      <workItem from=\"1587640282779\" duration=\"3201000\" />\r\n      <workItem from=\"1587645967884\" duration=\"721000\" />\r\n      <workItem from=\"1588086934919\" duration=\"236000\" />\r\n      <workItem from=\"1588820940008\" duration=\"1845000\" />\r\n      <workItem from=\"1588989068669\" duration=\"3868000\" />\r\n      <workItem from=\"1589004604027\" duration=\"2555000\" />\r\n      <workItem from=\"1589020957857\" duration=\"95000\" />\r\n      <workItem from=\"1589166027734\" duration=\"19147000\" />\r\n      <workItem from=\"1589249082355\" duration=\"7100000\" />\r\n      <workItem from=\"1589279129879\" duration=\"4819000\" />\r\n      <workItem from=\"1589332997432\" duration=\"5961000\" />\r\n      <workItem from=\"1589357883306\" duration=\"13827000\" />\r\n      <workItem from=\"1589449878333\" duration=\"57000\" />\r\n      <workItem from=\"1589449964314\" duration=\"84000\" />\r\n      <workItem from=\"1589450074472\" duration=\"13479000\" />\r\n      <workItem from=\"1589506425063\" duration=\"9665000\" />\r\n      <workItem from=\"1589547618456\" duration=\"3778000\" />\r\n      <workItem from=\"1589598103869\" duration=\"4247000\" />\r\n      <workItem from=\"1589619587332\" duration=\"10799000\" />\r\n      <workItem from=\"1589636813174\" duration=\"5830000\" />\r\n      <workItem from=\"1589682546228\" duration=\"25824000\" />\r\n      <workItem from=\"1589767414387\" duration=\"1170000\" />\r\n      <workItem from=\"1589775828862\" duration=\"28571000\" />\r\n      <workItem from=\"1589853578994\" duration=\"16471000\" />\r\n      <workItem from=\"1589939109428\" duration=\"25078000\" />\r\n      <workItem from=\"1590027878640\" duration=\"13273000\" />\r\n      <workItem from=\"1590048426203\" duration=\"862000\" />\r\n      <workItem from=\"1590074729949\" duration=\"2385000\" />\r\n      <workItem from=\"1590120518948\" duration=\"259000\" />\r\n      <workItem from=\"1590243184068\" duration=\"2076000\" />\r\n      <workItem from=\"1590300987642\" duration=\"7130000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"test\">\r\n      <created>1586053629854</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586053629855</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"test\">\r\n      <created>1586057231085</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586057231085</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"test\">\r\n      <created>1586057328158</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586057328158</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"test ignore\">\r\n      <created>1586058065545</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586058065545</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"test ignore\">\r\n      <created>1586062334989</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586062334989</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"用户认证接口开发完成，可以使用登录功能获取jti令牌，并且对应的Value正确写入到了Redis。\">\r\n      <created>1586078697340</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586078697340</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"添加了用户认证接口\">\r\n      <created>1586138373430</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586138373430</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"用户认证接口开发完成，可以使用登录功能获取jti令牌，并且对应的Value正确写入到了Redis。\">\r\n      <created>1586138598695</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586138598695</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"auth使用Feign调用ucenter获取用户信息成功！！\">\r\n      <created>1586147128550</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586147128550</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"优化了登录流程，现在会提示用户错误信息\">\r\n      <created>1586174385968</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1586174385969</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"完成了部分系统接口，包括查询部门下拉树列表等\">\r\n      <created>1589554891168</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1589554891168</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"菜单管理接口\">\r\n      <created>1589903371679</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1589903371680</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"授权管理完成\">\r\n      <created>1589987826066</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1589987826066</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"14\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TestHistory\">\r\n    <history-entry file=\"testIUserService_testuserlist - 2020.05.15 at 10h 47m 11s.xml\">\r\n      <configuration name=\"testIUserService.testuserlist\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n    <history-entry file=\"testIUserService_testuserlist - 2020.05.15 at 10h 50m 07s.xml\">\r\n      <configuration name=\"testIUserService.testuserlist\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n    <history-entry file=\"testIUserService_testuserlist - 2020.05.15 at 10h 55m 12s.xml\">\r\n      <configuration name=\"testIUserService.testuserlist\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n    <history-entry file=\"testIUserService_testuserlist - 2020.05.15 at 10h 56m 11s.xml\">\r\n      <configuration name=\"testIUserService.testuserlist\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n    <history-entry file=\"testIUserService_testuserlist - 2020.05.15 at 10h 58m 43s.xml\">\r\n      <configuration name=\"testIUserService.testuserlist\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n    <history-entry file=\"testIUserService_testuserlist - 2020.05.15 at 10h 59m 53s.xml\">\r\n      <configuration name=\"testIUserService.testuserlist\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n    <history-entry file=\"testIUserService_testgetDeptTree - 2020.05.16 at 11h 46m 42s.xml\">\r\n      <configuration name=\"testIUserService.testgetDeptTree\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n    <history-entry file=\"testIUserService_testgetDeptTree_(1) - 2020.05.16 at 11h 53m 47s.xml\">\r\n      <configuration name=\"testIUserService.testgetDeptTree (1)\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n    <history-entry file=\"testISystemService_testgetDeptTree - 2020.05.16 at 11h 57m 29s.xml\">\r\n      <configuration name=\"testISystemService.testgetDeptTree\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n    <history-entry file=\"testISystemService_testPermissionService - 2020.05.20 at 19h 29m 30s.xml\">\r\n      <configuration name=\"testISystemService.testPermissionService\" configurationId=\"JUnit\" />\r\n    </history-entry>\r\n  </component>\r\n  <component name=\"TimeTrackingManager\">\r\n    <option name=\"totallyTimeSpent\" value=\"524025000\" />\r\n  </component>\r\n  <component name=\"TodoView\">\r\n    <todo-panel id=\"selected-file\">\r\n      <is-autoscroll-to-source value=\"true\" />\r\n    </todo-panel>\r\n    <todo-panel id=\"all\">\r\n      <are-packages-shown value=\"true\" />\r\n      <is-autoscroll-to-source value=\"true\" />\r\n    </todo-panel>\r\n  </component>\r\n  <component name=\"ToolWindowManager\">\r\n    <frame x=\"-8\" y=\"-8\" width=\"1936\" height=\"1056\" extended-state=\"6\" />\r\n    <editor active=\"true\" />\r\n    <layout>\r\n      <window_info active=\"true\" content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.23667377\" />\r\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\r\n      <window_info id=\"Designer\" order=\"2\" />\r\n      <window_info id=\"Image Layers\" order=\"3\" />\r\n      <window_info id=\"Capture Tool\" order=\"4\" />\r\n      <window_info id=\"UI Designer\" order=\"5\" />\r\n      <window_info id=\"Favorites\" order=\"6\" side_tool=\"true\" />\r\n      <window_info id=\"Web\" order=\"7\" side_tool=\"true\" />\r\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\r\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" weight=\"0.34056398\" />\r\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" sideWeight=\"0.49865952\" weight=\"0.27223426\" />\r\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.43492407\" />\r\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\r\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\r\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" weight=\"0.3286334\" />\r\n      <window_info anchor=\"bottom\" id=\"Build\" order=\"7\" weight=\"0.23318872\" />\r\n      <window_info anchor=\"bottom\" id=\"Spring\" order=\"8\" weight=\"0.3275488\" />\r\n      <window_info anchor=\"bottom\" id=\"Docker\" order=\"9\" show_stripe_button=\"false\" />\r\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"10\" sideWeight=\"0.5021322\" side_tool=\"true\" weight=\"0.27440348\" />\r\n      <window_info anchor=\"bottom\" id=\"Terminal\" order=\"11\" weight=\"0.26138827\" />\r\n      <window_info anchor=\"bottom\" id=\"Problems\" order=\"12\" weight=\"0.40130153\" />\r\n      <window_info anchor=\"bottom\" id=\"Java Enterprise\" order=\"13\" weight=\"0.32956153\" />\r\n      <window_info anchor=\"bottom\" id=\"Database Changes\" order=\"14\" />\r\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"15\" weight=\"0.3275488\" />\r\n      <window_info anchor=\"bottom\" id=\"Run Dashboard\" order=\"16\" sideWeight=\"0.49932975\" visible=\"true\" weight=\"0.4295011\" />\r\n      <window_info anchor=\"bottom\" id=\"Application Servers\" order=\"17\" weight=\"0.3275488\" />\r\n      <window_info active=\"true\" anchor=\"bottom\" id=\"Messages\" order=\"18\" sideWeight=\"0.4978678\" visible=\"true\" weight=\"0.27440348\" />\r\n      <window_info anchor=\"bottom\" id=\"SVN Repositories\" order=\"19\" visible=\"true\" weight=\"0.37340876\" />\r\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\r\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\r\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\r\n      <window_info anchor=\"right\" id=\"Maven\" order=\"3\" visible=\"true\" weight=\"0.21801706\" />\r\n      <window_info anchor=\"right\" id=\"Palette\" order=\"4\" />\r\n      <window_info anchor=\"right\" id=\"Capture Analysis\" order=\"5\" />\r\n      <window_info anchor=\"right\" id=\"Database\" order=\"6\" />\r\n      <window_info anchor=\"right\" id=\"Palette&#9;\" order=\"7\" />\r\n      <window_info anchor=\"right\" id=\"Theme Preview\" order=\"8\" />\r\n      <window_info anchor=\"right\" id=\"Bean Validation\" order=\"9\" />\r\n    </layout>\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"1\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$\" />\r\n    </ignored-roots>\r\n    <MESSAGE value=\"test\" />\r\n    <MESSAGE value=\"test ignore\" />\r\n    <MESSAGE value=\"添加了用户认证接口\" />\r\n    <MESSAGE value=\"用户认证接口开发完成，可以使用登录功能获取jti令牌，并且对应的Value正确写入到了Redis。\" />\r\n    <MESSAGE value=\"auth使用Feign调用ucenter获取用户信息成功！！\" />\r\n    <MESSAGE value=\"优化了登录流程，现在会提示用户错误信息\" />\r\n    <MESSAGE value=\"完成了部分系统接口，包括查询部门下拉树列表等\" />\r\n    <MESSAGE value=\"完成了部门和菜单功能的主要接口\" />\r\n    <MESSAGE value=\"菜单管理接口\" />\r\n    <MESSAGE value=\"授权管理完成\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"授权管理完成\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/test/java/com/bishe/auth/TestRedis.java</url>\r\n          <line>37</line>\r\n          <properties />\r\n          <option name=\"timeStamp\" value=\"4\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/bishe-service-ucenter/src/test/java/com/bishe/manage_user/service/impl/testIUserService.java</url>\r\n          <line>37</line>\r\n          <properties />\r\n          <option name=\"timeStamp\" value=\"79\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/bishe-service-system/src/test/java/com/bishe/system/service/impl/testISystemService.java</url>\r\n          <line>26</line>\r\n          <properties />\r\n          <option name=\"timeStamp\" value=\"80\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/bishe-service-system/src/test/java/com/bishe/system/service/impl/testISystemService.java</url>\r\n          <line>32</line>\r\n          <properties />\r\n          <option name=\"timeStamp\" value=\"83\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/service/AuthService.java</url>\r\n          <line>20</line>\r\n          <properties />\r\n          <option name=\"timeStamp\" value=\"90\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"antWorkspaceConfiguration\">\r\n    <option name=\"IS_AUTOSCROLL_TO_SOURCE\" value=\"false\" />\r\n    <option name=\"FILTER_TARGETS\" value=\"false\" />\r\n  </component>\r\n  <component name=\"editorHistoryManager\">\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/config/WebSecurityConfig.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"209\">\r\n          <caret line=\"20\" column=\"94\" selection-start-line=\"20\" selection-start-column=\"94\" selection-end-line=\"20\" selection-end-column=\"94\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/RoleService.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"1387\">\r\n          <caret line=\"89\" column=\"19\" selection-start-line=\"89\" selection-start-column=\"19\" selection-end-line=\"89\" selection-end-column=\"19\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/exception/CustomExceptionCatch.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"266\">\r\n          <caret line=\"17\" column=\"63\" selection-start-line=\"17\" selection-start-column=\"63\" selection-end-line=\"17\" selection-end-column=\"63\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-govern-gateway/pom.xml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\" />\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-govern-center/pom.xml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"244\">\r\n          <caret line=\"41\" column=\"19\" lean-forward=\"true\" selection-start-line=\"41\" selection-start-column=\"19\" selection-end-line=\"41\" selection-end-column=\"19\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/response/AuthCode.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"95\">\r\n          <caret line=\"7\" column=\"37\" selection-start-line=\"7\" selection-start-column=\"37\" selection-end-line=\"7\" selection-end-column=\"37\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-common/src/main/java/com/bishe/framework/model/response/ResultCode.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"114\">\r\n          <caret line=\"6\" column=\"17\" selection-start-line=\"6\" selection-start-column=\"17\" selection-end-line=\"6\" selection-end-column=\"17\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-common/src/main/java/com/bishe/framework/model/response/CommonCode.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"190\">\r\n          <caret line=\"10\" column=\"31\" selection-start-line=\"10\" selection-start-column=\"26\" selection-end-line=\"10\" selection-end-column=\"31\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-govern-center/src/main/resources/application.yml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"95\">\r\n          <caret line=\"5\" column=\"7\" selection-start-line=\"5\" selection-start-column=\"7\" selection-end-line=\"5\" selection-end-column=\"7\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/pom.xml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"-1789\" />\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/src/main/resources/logback-spring.xml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\" />\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/EquipListRequest.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"95\">\r\n          <caret line=\"7\" column=\"13\" selection-start-line=\"7\" selection-start-column=\"13\" selection-end-line=\"7\" selection-end-column=\"13\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Menu.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"95\">\r\n          <caret line=\"8\" column=\"13\" selection-start-line=\"8\" selection-start-column=\"13\" selection-end-line=\"8\" selection-end-column=\"13\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/pom.xml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"209\">\r\n          <caret line=\"83\" column=\"8\" selection-start-line=\"83\" selection-start-column=\"8\" selection-end-line=\"86\" selection-end-column=\"21\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/RecordService.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"171\">\r\n          <caret line=\"20\" column=\"88\" selection-start-line=\"20\" selection-start-column=\"88\" selection-end-line=\"20\" selection-end-column=\"88\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/OnlineUser.java\" />\r\n    <entry file=\"file://$PROJECT_DIR$/utils/pom.xml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"380\">\r\n          <caret line=\"53\" column=\"25\" selection-start-line=\"53\" selection-start-column=\"25\" selection-end-line=\"53\" selection-end-column=\"25\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/response/OnlineResponse.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"190\">\r\n          <caret line=\"10\" column=\"13\" selection-start-line=\"10\" selection-start-column=\"13\" selection-end-line=\"10\" selection-end-column=\"13\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/config/ResourceServerConfig.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"385\">\r\n          <caret line=\"59\" column=\"58\" selection-start-line=\"59\" selection-start-column=\"58\" selection-end-line=\"59\" selection-end-column=\"58\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/OnlineRequest.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"114\">\r\n          <caret line=\"6\" column=\"32\" selection-start-line=\"6\" selection-start-column=\"19\" selection-end-line=\"6\" selection-end-column=\"32\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"2603\">\r\n          <caret line=\"137\" column=\"21\" selection-start-line=\"137\" selection-start-column=\"21\" selection-end-line=\"137\" selection-end-column=\"21\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/BookController.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"247\">\r\n          <caret line=\"22\" column=\"4\" selection-start-line=\"22\" selection-start-column=\"4\" selection-end-line=\"22\" selection-end-column=\"53\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/DeptController.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"209\">\r\n          <caret line=\"16\" column=\"30\" selection-start-line=\"16\" selection-start-column=\"22\" selection-end-line=\"16\" selection-end-column=\"30\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/UserManageApplication.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"209\">\r\n          <caret line=\"16\" column=\"13\" selection-start-line=\"16\" selection-start-column=\"13\" selection-end-line=\"16\" selection-end-column=\"13\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/impl/IUserService.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"532\">\r\n          <caret line=\"36\" column=\"19\" selection-start-line=\"36\" selection-start-column=\"19\" selection-end-line=\"36\" selection-end-column=\"19\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/RoleController.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"608\">\r\n          <caret line=\"46\" column=\"39\" selection-start-line=\"46\" selection-start-column=\"39\" selection-end-line=\"46\" selection-end-column=\"39\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/PermissionController.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"564\">\r\n          <caret line=\"35\" column=\"27\" selection-start-line=\"35\" selection-start-column=\"27\" selection-end-line=\"35\" selection-end-column=\"27\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/PermissionService.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"620\">\r\n          <caret line=\"59\" selection-start-line=\"59\" selection-end-line=\"59\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/UserService.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"488\">\r\n          <caret line=\"66\" column=\"49\" lean-forward=\"true\" selection-start-line=\"66\" selection-start-column=\"49\" selection-end-line=\"66\" selection-end-column=\"49\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/dao/impl/IUserDao.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"545\">\r\n          <caret line=\"56\" column=\"34\" lean-forward=\"true\" selection-start-line=\"56\" selection-start-column=\"34\" selection-end-line=\"56\" selection-end-column=\"34\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"228\">\r\n          <caret line=\"12\" column=\"9\" selection-start-line=\"12\" selection-start-column=\"9\" selection-end-line=\"12\" selection-end-column=\"9\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/http/HttpServletRequest.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"324\">\r\n          <caret line=\"203\" column=\"35\" selection-start-line=\"203\" selection-start-column=\"35\" selection-end-line=\"203\" selection-end-column=\"35\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/controller/UcenterController.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"475\">\r\n          <caret line=\"39\" column=\"4\" selection-start-line=\"39\" selection-start-column=\"4\" selection-end-line=\"39\" selection-end-column=\"49\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"1216\">\r\n          <caret line=\"88\" column=\"39\" selection-start-line=\"88\" selection-start-column=\"21\" selection-end-line=\"88\" selection-end-column=\"39\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/filter/LoginFilter.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"684\">\r\n          <caret line=\"54\" column=\"42\" selection-start-line=\"54\" selection-start-column=\"42\" selection-end-line=\"54\" selection-end-column=\"42\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/service/AuthService.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"266\">\r\n          <caret line=\"22\" selection-start-line=\"22\" selection-end-line=\"22\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-govern-gateway/src/main/resources/application.yml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"399\">\r\n          <caret line=\"21\" column=\"23\" selection-start-line=\"21\" selection-start-column=\"12\" selection-end-line=\"21\" selection-end-column=\"23\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"950\">\r\n          <caret line=\"58\" column=\"36\" selection-start-line=\"58\" selection-start-column=\"36\" selection-end-line=\"58\" selection-end-column=\"36\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"jar://G:/java0/java12/lib/src.zip!/java.base/java/util/concurrent/locks/LockSupport.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"181\">\r\n          <caret line=\"193\" selection-start-line=\"193\" selection-end-line=\"193\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"jar://G:/java0/java12/lib/src.zip!/java.base/jdk/internal/misc/Unsafe.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"181\">\r\n          <caret line=\"2295\" column=\"23\" selection-start-line=\"2295\" selection-start-column=\"23\" selection-end-line=\"2295\" selection-end-column=\"23\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"jar://G:/java0/java12/lib/src.zip!/java.base/java/lang/Object.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"181\">\r\n          <caret line=\"349\" column=\"29\" selection-start-line=\"349\" selection-start-column=\"29\" selection-end-line=\"349\" selection-end-column=\"29\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"jar://G:/java0/java12/lib/src.zip!/java.base/java/lang/Thread.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"181\">\r\n          <caret line=\"300\" column=\"30\" selection-start-line=\"300\" selection-start-column=\"30\" selection-end-line=\"300\" selection-end-column=\"30\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/Detils.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"223\">\r\n          <caret line=\"37\" selection-start-line=\"37\" selection-end-line=\"37\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"76\">\r\n          <caret line=\"6\" selection-start-line=\"6\" selection-end-line=\"6\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/LogWrite.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"285\">\r\n          <caret line=\"15\" lean-forward=\"true\" selection-start-line=\"15\" selection-end-line=\"15\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.30/fastjson-1.2.30.jar!/com/alibaba/fastjson/JSON.class\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"165\">\r\n          <caret line=\"375\" selection-start-line=\"375\" selection-end-line=\"375\" />\r\n          <folding>\r\n            <element signature=\"e#14392#14393#0\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"374\">\r\n          <caret line=\"53\" column=\"9\" selection-start-line=\"53\" selection-start-column=\"9\" selection-end-line=\"53\" selection-end-column=\"9\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"247\">\r\n          <caret line=\"22\" column=\"135\" lean-forward=\"true\" selection-start-line=\"22\" selection-start-column=\"122\" selection-end-line=\"22\" selection-end-column=\"135\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter/src/main/resources/application.yml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"228\">\r\n          <caret line=\"12\" column=\"135\" selection-start-line=\"12\" selection-start-column=\"135\" selection-end-line=\"12\" selection-end-column=\"135\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-system/src/main/resources/application.yml\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"171\">\r\n          <caret line=\"11\" column=\"135\" selection-start-line=\"11\" selection-start-column=\"135\" selection-end-line=\"11\" selection-end-column=\"135\" />\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n    <entry file=\"file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java\">\r\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\r\n        <state relative-caret-position=\"328\">\r\n          <caret line=\"109\" column=\"40\" lean-forward=\"true\" selection-start-line=\"109\" selection-start-column=\"40\" selection-end-line=\"109\" selection-end-column=\"40\" />\r\n          <folding>\r\n            <element signature=\"imports\" expanded=\"true\" />\r\n          </folding>\r\n        </state>\r\n      </provider>\r\n    </entry>\r\n  </component>\r\n  <component name=\"masterDetails\">\r\n    <states>\r\n      <state key=\"ArquillianSettingsConfigurable.UI\">\r\n        <settings>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.2\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n      <state key=\"ArtifactsStructureConfigurable.UI\">\r\n        <settings>\r\n          <artifact-editor />\r\n          <last-edited>bisheUi:war exploded</last-edited>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.30223125\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n      <state key=\"Copyright.UI\">\r\n        <settings>\r\n          <last-edited>copyright</last-edited>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.2\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n      <state key=\"FacetStructureConfigurable.UI\">\r\n        <settings>\r\n          <last-edited>Spring</last-edited>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.30223125\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n      <state key=\"GlobalLibrariesConfigurable.UI\">\r\n        <settings>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.30223125\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n      <state key=\"JdkListConfigurable.UI\">\r\n        <settings>\r\n          <last-edited>12</last-edited>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.30223125\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n      <state key=\"ModuleStructureConfigurable.UI\">\r\n        <settings>\r\n          <last-edited>bishe-model</last-edited>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.30223125\" />\r\n                <option value=\"0.6\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n      <state key=\"ProjectJDKs.UI\">\r\n        <settings>\r\n          <last-edited>12</last-edited>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.2\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n      <state key=\"ProjectLibrariesConfigurable.UI\">\r\n        <settings>\r\n          <last-edited>Maven: org.springframework:spring-web:5.0.5.RELEASE</last-edited>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.30223125\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n      <state key=\"ScopeChooserConfigurable.UI\">\r\n        <settings>\r\n          <splitter-proportions>\r\n            <option name=\"proportions\">\r\n              <list>\r\n                <option value=\"0.2\" />\r\n              </list>\r\n            </option>\r\n          </splitter-proportions>\r\n        </settings>\r\n      </state>\r\n    </states>\r\n  </component>\r\n  <component name=\"mavenExecuteGoalHistory\">\r\n    <option value=\"$PROJECT_DIR$/bishe-parent\" />\r\n    <option value=\"compile -Xlint:unchecked\" />\r\n    <option value=\"-X dependency:tree&gt;tree.txt\" />\r\n    <option value=\"dependency:tree&gt;tree.txt\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1590372371000)
++++ .idea/workspace.xml	(date 1596713856445)
+@@ -6,36 +6,29 @@
+     </artifacts-to-build>
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="495f26a0-73b3-48a5-abc3-5a908cda1e68" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__eu_bitwalker_UserAgentUtils_1_20.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/OnlineRequest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/response/OnlineResponse.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/Detils.java" afterDir="false" />
++    <list default="true" id="495f26a0-73b3-48a5-abc3-5a908cda1e68" name="Default Changelist" comment="授权管理完成">
++      <change afterPath="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/response/Upload.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/UploadController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/IUploadDao.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/UploadService.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IUpload.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-govern-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-govern-center/src/main/resources/application.yml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/service/AuthService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/OnlineUser.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/response/AuthCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/response/AuthCode.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/bishe-api/target/bishe-api.jar" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/bishe-api/target/maven-archiver/pom.properties" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/bishe-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/bishe-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/bishe-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/bishe-common/target/bishe-common.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-common/target/bishe-common.jar" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/bishe-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/bishe-model/target/bishe-model.jar" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-model/target/bishe-model.jar" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/PermissionService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/bishe-service-ucenter-auth.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/EquipmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/EquipmentController.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/target/classes/application.yml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/target/classes/com/bishe/auth/service/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/target/classes/com/bishe/auth/service/UserDetailsServiceImpl.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/bishe-service-ucenter/bishe-service-ucenter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bishe-service-ucenter/bishe-service-ucenter.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/utils/target/utils.jar" beforeDir="false" afterPath="$PROJECT_DIR$/utils/target/utils.jar" afterDir="false" />
+     </list>
+     <ignored path="$PROJECT_DIR$/bishe-parent/target/" />
+@@ -70,80 +63,88 @@
+   </component>
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java">
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/OnlineRequest.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="328">
+-              <caret line="109" column="40" lean-forward="true" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
+-              <folding>
+-                <element signature="imports" expanded="true" />
+-              </folding>
++            <state relative-caret-position="171">
++              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml">
++        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/controller/UcenterController.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="247">
+-              <caret line="22" column="135" lean-forward="true" selection-start-line="22" selection-start-column="122" selection-end-line="22" selection-end-column="135" />
++            <state relative-caret-position="1216">
++              <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/resources/application.yml">
++        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/UserService.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="228">
+-              <caret line="12" column="135" selection-start-line="12" selection-start-column="135" selection-end-line="12" selection-end-column="135" />
++            <state relative-caret-position="2090">
++              <caret line="136" column="48" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/resources/application.yml">
++        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/dao/impl/IUserDao.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="171">
+-              <caret line="11" column="135" selection-start-line="11" selection-start-column="135" selection-end-line="11" selection-end-column="135" />
++            <state relative-caret-position="305">
++              <caret line="107" column="64" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="64" />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java">
++      <file pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/client/UserClient.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="76">
+-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+-              <folding>
+-                <element signature="imports" expanded="true" />
+-              </folding>
++            <state relative-caret-position="209">
++              <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java">
++        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="374">
+-              <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
++            <state relative-caret-position="3971">
++              <caret line="242" column="41" selection-start-line="242" selection-start-column="41" selection-end-line="242" selection-end-column="41" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#8132#8133#0" expanded="true" />
++                <element signature="e#8182#8183#0" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java">
++        <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="950">
+-              <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
++            <state relative-caret-position="266">
++              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/Detils.java">
++        <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="223">
+-              <caret line="37" selection-start-line="37" selection-end-line="37" />
++            <state relative-caret-position="323">
++              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+               <folding>
+                 <element signature="imports" expanded="true" />
+               </folding>
+@@ -190,6 +191,7 @@
+       <find>setDeptName</find>
+       <find>useragentutils</find>
+       <find>requestThread</find>
++      <find>writelog</find>
+     </findStrings>
+     <replaceStrings>
+       <replace>../resouces</replace>
+@@ -224,16 +226,6 @@
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
+-        <option value="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/record/Record.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IEquipService.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/EquipService.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/IEquipDao.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/config/WebSecurityConfig.java" />
+-        <option value="$PROJECT_DIR$/bishe-api/src/main/java/com/bishe/api/system/bookControllerApi.java" />
+-        <option value="$PROJECT_DIR$/bishe-api/src/main/java/com/bishe/api/system/SystemControllerApi.java" />
+-        <option value="$PROJECT_DIR$/bishe-api/src/main/java/com/bishe/api/system/BookControllerApi.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/DeptController.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/config/ResourceServerConfig.java" />
+         <option value="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/Permission.java" />
+         <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/PermissionService.java" />
+         <option value="$PROJECT_DIR$/bishe-service-system/src/test/java/com/bishe/system/service/impl/testISystemService.java" />
+@@ -243,7 +235,6 @@
+         <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IPermissionService.java" />
+         <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/MenuController.java" />
+         <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/BookController.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/EquipmentController.java" />
+         <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/PermissionController.java" />
+         <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/RoleController.java" />
+         <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/PermissionDao.java" />
+@@ -251,20 +242,13 @@
+         <option value="$PROJECT_DIR$/bishe-govern-center/src/main/resources/application.yml" />
+         <option value="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/online.java" />
+         <option value="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/onlineRequest.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/RecordService.java" />
+         <option value="$PROJECT_DIR$/utils/pom.xml" />
+         <option value="$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/detils.java" />
+-        <option value="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/controller/UcenterController.java" />
+         <option value="$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/impl/IUserService.java" />
+         <option value="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/OnlineRequest.java" />
+         <option value="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/response/OnlineResponse.java" />
+         <option value="$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/config/ResourceServerConfig.java" />
+-        <option value="$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/dao/impl/IUserDao.java" />
+         <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml" />
+-        <option value="$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java" />
+         <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/PermissionService.java" />
+         <option value="$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/UserService.java" />
+         <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java" />
+@@ -274,6 +258,24 @@
+         <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml" />
+         <option value="$PROJECT_DIR$/bishe-service-ucenter/src/main/resources/application.yml" />
+         <option value="$PROJECT_DIR$/bishe-service-system/src/main/resources/application.yml" />
++        <option value="$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/controller/UcenterController.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/upload.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/IBookDao.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/BookService.java" />
++        <option value="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/Upload.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/Upload.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/RecordService.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/IUploadDao.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/UploadController.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IUpload.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/UploadService.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/DeptController.java" />
++        <option value="$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/EquipmentController.java" />
++        <option value="$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/dao/impl/IUserDao.java" />
++        <option value="$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java" />
++        <option value="$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java" />
++        <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java" />
++        <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java" />
+         <option value="$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java" />
+       </list>
+     </option>
+@@ -316,10 +318,6 @@
+           <item name="bishe-service-ucenter-auth" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+         </path>
+-        <path>
+-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+-          <item name="utils" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+-        </path>
+       </expand>
+       <select />
+     </treeState>
+@@ -329,9 +327,9 @@
+     <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=GBK" />
+   </component>
+   <component name="ProjectFrameBounds" extendedState="6">
+-    <option name="y" value="554" />
+-    <option name="width" value="512" />
+-    <option name="height" value="277" />
++    <option name="y" value="550" />
++    <option name="width" value="515" />
++    <option name="height" value="280" />
+   </component>
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+     <ConfirmationsSetting value="2" id="Add" />
+@@ -341,53 +339,112 @@
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
+-      <pane id="PackagesPane" />
+       <pane id="ProjectPane">
+         <subPane>
+           <expand>
+             <path>
+               <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
+               <item name="education1.0" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
++              <item name="education1.0" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-system" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
++              <item name="education1.0" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-system" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
++              <item name="education1.0" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-system" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="main" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
++              <item name="education1.0" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-system" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="main" type="462c0819:PsiDirectoryNode" />
++              <item name="java" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
++              <item name="education1.0" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-system" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="main" type="462c0819:PsiDirectoryNode" />
++              <item name="java" type="462c0819:PsiDirectoryNode" />
++              <item name="system" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
++              <item name="education1.0" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-ucenter-auth" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
++              <item name="education1.0" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-ucenter-auth" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
+               <item name="education1.0" type="462c0819:PsiDirectoryNode" />
+               <item name="bishe-service-ucenter-auth" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="main" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
+               <item name="education1.0" type="462c0819:PsiDirectoryNode" />
+-              <item name="utils" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-ucenter-auth" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="main" type="462c0819:PsiDirectoryNode" />
++              <item name="java" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
+               <item name="education1.0" type="462c0819:PsiDirectoryNode" />
+-              <item name="utils" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-ucenter-auth" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="main" type="462c0819:PsiDirectoryNode" />
++              <item name="java" type="462c0819:PsiDirectoryNode" />
++              <item name="auth" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
+               <item name="education1.0" type="462c0819:PsiDirectoryNode" />
+-              <item name="utils" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-ucenter-auth" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="main" type="462c0819:PsiDirectoryNode" />
++              <item name="java" type="462c0819:PsiDirectoryNode" />
++              <item name="auth" type="462c0819:PsiDirectoryNode" />
++              <item name="client" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
+               <item name="education1.0" type="462c0819:PsiDirectoryNode" />
+-              <item name="utils" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-ucenter-auth" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="main" type="462c0819:PsiDirectoryNode" />
+               <item name="java" type="462c0819:PsiDirectoryNode" />
++              <item name="auth" type="462c0819:PsiDirectoryNode" />
++              <item name="config" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="education1.0" type="b2602c69:ProjectViewProjectNode" />
+               <item name="education1.0" type="462c0819:PsiDirectoryNode" />
+-              <item name="utils" type="462c0819:PsiDirectoryNode" />
++              <item name="bishe-service-ucenter-auth" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="main" type="462c0819:PsiDirectoryNode" />
+               <item name="java" type="462c0819:PsiDirectoryNode" />
+-              <item name="utils" type="462c0819:PsiDirectoryNode" />
++              <item name="auth" type="462c0819:PsiDirectoryNode" />
++              <item name="controller" type="462c0819:PsiDirectoryNode" />
+             </path>
+           </expand>
+           <select />
+@@ -404,6 +461,7 @@
+           <select />
+         </subPane>
+       </pane>
++      <pane id="PackagesPane" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+@@ -758,9 +816,9 @@
+     </list>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Spring Boot.GatewayApplication" />
+         <item itemvalue="Spring Boot.SystemManageApplication" />
+         <item itemvalue="Spring Boot.GovernCenterApplication" />
+-        <item itemvalue="Spring Boot.GatewayApplication" />
+         <item itemvalue="JUnit.testISystemService.testPermissionService" />
+         <item itemvalue="JUnit.testISystemService.testgetDeptTree" />
+       </list>
+@@ -856,6 +914,14 @@
+       <workItem from="1590120518948" duration="259000" />
+       <workItem from="1590243184068" duration="2076000" />
+       <workItem from="1590300987642" duration="7130000" />
++      <workItem from="1590372313088" duration="723000" />
++      <workItem from="1590763810659" duration="56000" />
++      <workItem from="1590906482161" duration="857000" />
++      <workItem from="1591065504124" duration="11535000" />
++      <workItem from="1591143629692" duration="2889000" />
++      <workItem from="1592833073791" duration="117000" />
++      <workItem from="1595046946190" duration="4195000" />
++      <workItem from="1596713581680" duration="271000" />
+     </task>
+     <task id="LOCAL-00001" summary="test">
+       <created>1586053629854</created>
+@@ -948,7 +1014,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1589987826066</updated>
+     </task>
+-    <option name="localTasksCounter" value="14" />
++    <task id="LOCAL-00014" summary="授权管理完成">
++      <created>1590372372566</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL-00014" />
++      <option name="project" value="LOCAL" />
++      <updated>1590372372566</updated>
++    </task>
++    <option name="localTasksCounter" value="15" />
+     <servers />
+   </component>
+   <component name="TestHistory">
+@@ -984,7 +1057,7 @@
+     </history-entry>
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="524025000" />
++    <option name="totallyTimeSpent" value="544668000" />
+   </component>
+   <component name="TodoView">
+     <todo-panel id="selected-file">
+@@ -997,9 +1070,8 @@
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+-    <editor active="true" />
+     <layout>
+-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23667377" />
++      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
+       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+       <window_info id="Designer" order="2" />
+       <window_info id="Image Layers" order="3" />
+@@ -1009,12 +1081,12 @@
+       <window_info id="Web" order="7" side_tool="true" />
+       <window_info anchor="bottom" id="Message" order="0" />
+       <window_info anchor="bottom" id="Find" order="1" weight="0.34056398" />
+-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.27223426" />
++      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.39154014" />
+       <window_info anchor="bottom" id="Debug" order="3" weight="0.43492407" />
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286334" />
+-      <window_info anchor="bottom" id="Build" order="7" weight="0.23318872" />
++      <window_info anchor="bottom" id="Build" order="7" weight="0.23229462" />
+       <window_info anchor="bottom" id="Spring" order="8" weight="0.3275488" />
+       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021322" side_tool="true" weight="0.27440348" />
+@@ -1023,14 +1095,14 @@
+       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32956153" />
+       <window_info anchor="bottom" id="Database Changes" order="14" />
+       <window_info anchor="bottom" id="Version Control" order="15" weight="0.3275488" />
+-      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49932975" visible="true" weight="0.4295011" />
++      <window_info anchor="bottom" id="Run Dashboard" order="16" sideWeight="0.49932975" weight="0.36511377" />
+       <window_info anchor="bottom" id="Application Servers" order="17" weight="0.3275488" />
+       <window_info active="true" anchor="bottom" id="Messages" order="18" sideWeight="0.4978678" visible="true" weight="0.27440348" />
+       <window_info anchor="bottom" id="SVN Repositories" order="19" visible="true" weight="0.37340876" />
+       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.21801706" />
++      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.17324094" />
+       <window_info anchor="right" id="Palette" order="4" />
+       <window_info anchor="right" id="Capture Analysis" order="5" />
+       <window_info anchor="right" id="Database" order="6" />
+@@ -1099,383 +1171,401 @@
+     <option name="FILTER_TARGETS" value="false" />
+   </component>
+   <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/config/WebSecurityConfig.java">
++    <entry file="file://$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/filter/LoginFilter.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="209">
+-          <caret line="20" column="94" selection-start-line="20" selection-start-column="94" selection-end-line="20" selection-end-column="94" />
++        <state relative-caret-position="684">
++          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/RoleService.java">
++    <entry file="file://$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/service/AuthService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1387">
+-          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
++        <state relative-caret-position="266">
++          <caret line="22" selection-start-line="22" selection-end-line="22" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/exception/CustomExceptionCatch.java">
++    <entry file="file://$PROJECT_DIR$/bishe-govern-gateway/src/main/resources/application.yml">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="266">
+-          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
++        <state relative-caret-position="399">
++          <caret line="21" column="23" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="23" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-govern-gateway/pom.xml">
+-      <provider selected="true" editor-type-id="text-editor" />
++    <entry file="jar://G:/java0/java12/lib/src.zip!/java.base/java/util/concurrent/locks/LockSupport.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="181">
++          <caret line="193" selection-start-line="193" selection-end-line="193" />
++        </state>
++      </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-govern-center/pom.xml">
++    <entry file="jar://G:/java0/java12/lib/src.zip!/java.base/jdk/internal/misc/Unsafe.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="244">
+-          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
++        <state relative-caret-position="181">
++          <caret line="2295" column="23" selection-start-line="2295" selection-start-column="23" selection-end-line="2295" selection-end-column="23" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/response/AuthCode.java">
++    <entry file="jar://G:/java0/java12/lib/src.zip!/java.base/java/lang/Object.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="95">
+-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
++        <state relative-caret-position="181">
++          <caret line="349" column="29" selection-start-line="349" selection-start-column="29" selection-end-line="349" selection-end-column="29" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-common/src/main/java/com/bishe/framework/model/response/ResultCode.java">
++    <entry file="jar://G:/java0/java12/lib/src.zip!/java.base/java/lang/Thread.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="114">
+-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
++        <state relative-caret-position="181">
++          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-common/src/main/java/com/bishe/framework/model/response/CommonCode.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/LogWrite.java" />
++    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.30/fastjson-1.2.30.jar!/com/alibaba/fastjson/JSON.class">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="190">
+-          <caret line="10" column="31" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="31" />
++        <state relative-caret-position="165">
++          <caret line="375" selection-start-line="375" selection-end-line="375" />
++          <folding>
++            <element signature="e#14392#14393#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-govern-center/src/main/resources/application.yml">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="95">
+-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
++        <state relative-caret-position="418">
++          <caret line="22" column="135" selection-start-line="22" selection-start-column="122" selection-end-line="22" selection-end-column="135" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/pom.xml">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/resources/application.yml">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-1789" />
++        <state relative-caret-position="228">
++          <caret line="12" column="135" selection-start-line="12" selection-start-column="135" selection-end-line="12" selection-end-column="135" />
++        </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/resources/logback-spring.xml">
+-      <provider selected="true" editor-type-id="text-editor" />
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/EquipListRequest.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/resources/application.yml">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="95">
+-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
++        <state relative-caret-position="209">
++          <caret line="11" column="135" selection-start-line="11" selection-start-column="135" selection-end-line="11" selection-end-column="135" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Menu.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="95">
+-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
++        <state relative-caret-position="665">
++          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/pom.xml">
++    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/Detils.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="209">
+-          <caret line="83" column="8" selection-start-line="83" selection-start-column="8" selection-end-line="86" selection-end-column="21" />
++        <state relative-caret-position="665">
++          <caret line="37" selection-start-line="37" selection-end-line="37" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/RecordService.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/BookService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="171">
+-          <caret line="20" column="88" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
++        <state relative-caret-position="380">
++          <caret line="34" column="23" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="23" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/ucenter/OnlineUser.java" />
+-    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/IBookDao.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="380">
+-          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
++        <state relative-caret-position="209">
++          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/response/OnlineResponse.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/IMenuDao.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="190">
+-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
++        <state relative-caret-position="95">
++          <caret line="10" column="11" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="11" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/config/ResourceServerConfig.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IDeptService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="385">
+-          <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
++        <state relative-caret-position="76">
++          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/OnlineRequest.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IBookService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="114">
+-          <caret line="6" column="32" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="32" />
++        <state relative-caret-position="76">
++          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/pom.xml">
++    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/record/Record.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="2603">
+-          <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
++        <state relative-caret-position="190">
++          <caret line="27" column="23" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="23" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/BookController.java">
++    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/response/Upload.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="247">
+-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="53" />
++        <state relative-caret-position="114">
++          <caret line="6" selection-start-line="6" selection-end-line="6" />
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/DeptController.java">
++    <entry file="jar://G:/java0/java12/lib/src.zip!/java.base/java/util/List.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="209">
+-          <caret line="16" column="30" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="30" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
++        <state relative-caret-position="152">
++          <caret line="571" column="6" selection-start-line="571" selection-start-column="6" selection-end-line="571" selection-end-column="6" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/UserManageApplication.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IRoleService.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="209">
+-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
++          <caret line="16" column="14" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="14" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/RoleService.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="836">
++          <caret line="58" column="26" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="26" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/impl/IUserService.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IPermissionService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="532">
+-          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
++        <state relative-caret-position="76">
++          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/RoleController.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IRecordService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="608">
+-          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
++        <state relative-caret-position="209">
++          <caret line="16" selection-start-line="16" selection-end-line="16" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/PermissionController.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/impl/IUpload.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="564">
+-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
++        <state relative-caret-position="190">
++          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/PermissionService.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/UploadService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="620">
+-          <caret line="59" selection-start-line="59" selection-end-line="59" />
++        <state relative-caret-position="551">
++          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+           <folding>
+             <element signature="imports" expanded="true" />
++            <element signature="e#966#967#0" expanded="true" />
++            <element signature="e#993#994#0" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/UserService.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/exception/CustomExceptionCatch.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="488">
+-          <caret line="66" column="49" lean-forward="true" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
++        <state relative-caret-position="209">
++          <caret line="14" selection-start-line="14" selection-end-line="14" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/dao/impl/IUserDao.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/service/RecordService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="545">
+-          <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
++        <state relative-caret-position="1083">
++          <caret line="70" column="50" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/SystemManageApplication.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="228">
+-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
++          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
++          <folding>
++            <element signature="e#796#797#0" expanded="true" />
++            <element signature="e#870#871#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/dao/IUploadDao.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="133">
++          <caret line="11" column="91" selection-start-line="11" selection-start-column="91" selection-end-line="11" selection-end-column="91" />
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/http/HttpServletRequest.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/captchaInfoController.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="324">
+-          <caret line="203" column="35" selection-start-line="203" selection-start-column="35" selection-end-line="203" selection-end-column="35" />
++        <state relative-caret-position="95">
++          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/controller/UcenterController.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/RecordController.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="475">
+-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="49" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
++        <state relative-caret-position="114">
++          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/MenuController.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="1216">
+-          <caret line="88" column="39" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="39" />
++        <state relative-caret-position="114">
++          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/filter/LoginFilter.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/EquipmentController.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="684">
+-          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
++        <state relative-caret-position="171">
++          <caret line="17" selection-start-line="17" selection-end-line="17" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-govern-gateway/src/main/java/com/bishe/govern/gateway/service/AuthService.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/DeptController.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="266">
+-          <caret line="22" selection-start-line="22" selection-end-line="22" />
++        <state relative-caret-position="342">
++          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-govern-gateway/src/main/resources/application.yml">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/BookController.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="399">
+-          <caret line="21" column="23" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="23" />
++          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/UploadController.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="950">
+-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
++        <state relative-caret-position="437">
++          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="jar://G:/java0/java12/lib/src.zip!/java.base/java/util/concurrent/locks/LockSupport.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/java/com/bishe/system/controller/RoleController.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="181">
+-          <caret line="193" selection-start-line="193" selection-end-line="193" />
++        <state relative-caret-position="-118">
++          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="jar://G:/java0/java12/lib/src.zip!/java.base/jdk/internal/misc/Unsafe.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/UcenterAuthApplication.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="181">
+-          <caret line="2295" column="23" selection-start-line="2295" selection-start-column="23" selection-end-line="2295" selection-end-column="23" />
++        <state relative-caret-position="228">
++          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="jar://G:/java0/java12/lib/src.zip!/java.base/java/lang/Object.java">
++    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/IpUtil.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="181">
+-          <caret line="349" column="29" selection-start-line="349" selection-start-column="29" selection-end-line="349" selection-end-column="29" />
++        <state relative-caret-position="323">
++          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="30" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="jar://G:/java0/java12/lib/src.zip!/java.base/java/lang/Thread.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/controller/AuthController.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="181">
+-          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
++        <state relative-caret-position="177">
++          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bishe/framework/utils/Detils.java">
++    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/request/OnlineRequest.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="223">
+-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
++        <state relative-caret-position="171">
++          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/controller/UcenterController.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="76">
+-          <caret line="6" selection-start-line="6" selection-end-line="6" />
++        <state relative-caret-position="1216">
++          <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/LogWrite.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/service/UserService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="285">
+-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
++        <state relative-caret-position="2090">
++          <caret line="136" column="48" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.30/fastjson-1.2.30.jar!/com/alibaba/fastjson/JSON.class">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="165">
+-          <caret line="375" selection-start-line="375" selection-end-line="375" />
++        <state relative-caret-position="3971">
++          <caret line="242" column="41" selection-start-line="242" selection-start-column="41" selection-end-line="242" selection-end-column="41" />
+           <folding>
+-            <element signature="e#14392#14393#0" expanded="true" />
++            <element signature="imports" expanded="true" />
++            <element signature="e#8132#8133#0" expanded="true" />
++            <element signature="e#8182#8183#0" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/UserDetailsServiceImpl.java">
++    <entry file="file://$PROJECT_DIR$/bishe-model/src/main/java/com/bishe/framework/domain/system/Online.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="374">
+-          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
++        <state relative-caret-position="266">
++          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/resources/application.yml">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="247">
+-          <caret line="22" column="135" lean-forward="true" selection-start-line="22" selection-start-column="122" selection-end-line="22" selection-end-column="135" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/resources/application.yml">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/dao/loginDao.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="228">
+-          <caret line="12" column="135" selection-start-line="12" selection-start-column="135" selection-end-line="12" selection-end-column="135" />
++        <state relative-caret-position="323">
++          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-system/src/main/resources/application.yml">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter/src/main/java/com/bishe/manage_user/dao/impl/IUserDao.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="171">
+-          <caret line="11" column="135" selection-start-line="11" selection-start-column="135" selection-end-line="11" selection-end-column="135" />
++        <state relative-caret-position="305">
++          <caret line="107" column="64" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="64" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/service/AuthService.java">
++    <entry file="file://$PROJECT_DIR$/bishe-service-ucenter-auth/src/main/java/com/bishe/auth/client/UserClient.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="328">
+-          <caret line="109" column="40" lean-forward="true" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
++        <state relative-caret-position="209">
++          <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="83" />
+         </state>
+       </provider>
+     </entry>
+Index: bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(date 1590372371000)
++++ bishe-service-ucenter-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(date 1595050534962)
+@@ -1,0 +1,13 @@
++com\bishe\auth\service\UserDetailsServiceImpl.class
++com\bishe\auth\service\AuthService$1.class
++com\bishe\auth\UcenterAuthApplication.class
++com\bishe\auth\config\WebSecurityConfig.class
++com\bishe\auth\config\CustomUserAuthenticationConverter.class
++com\bishe\auth\controller\AuthController.class
++com\bishe\auth\config\AuthorizationServerConfig.class
++com\bishe\auth\controller\captchaInfoController.class
++com\bishe\auth\service\UserJwt.class
++com\bishe\auth\service\AuthService.class
++com\bishe\auth\client\UserClient.class
++com\bishe\auth\dao\loginDao.class
++com\bishe\auth\config\CorsConfig.class
+Index: bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>com\\bishe\\framework\\domain\\system\\response\\QueryDeptTreeResponse.class\r\ncom\\bishe\\framework\\domain\\ucenter\\request\\LoginRequest.class\r\ncom\\bishe\\framework\\domain\\system\\response\\QueryRoleResult.class\r\ncom\\bishe\\framework\\domain\\system\\Online.class\r\ncom\\bishe\\framework\\domain\\system\\request\\MenuListRequest.class\r\ncom\\bishe\\framework\\domain\\ucenter\\response\\AjaxResult.class\r\ncom\\bishe\\framework\\domain\\ucenter\\response\\LoginResult.class\r\ncom\\bishe\\framework\\domain\\system\\response\\QueryRecordResponse.class\r\ncom\\bishe\\framework\\domain\\system\\response\\OnlineResponse.class\r\ncom\\bishe\\framework\\domain\\ucenter\\ext\\AuthToken.class\r\ncom\\bishe\\framework\\domain\\system\\response\\QueryEquipResult.class\r\ncom\\bishe\\framework\\domain\\ucenter\\request\\QueryPageRequest.class\r\ncom\\bishe\\framework\\domain\\ucenter\\response\\QueryPageResponse.class\r\ncom\\bishe\\framework\\domain\\system\\Permission.class\r\ncom\\bishe\\framework\\domain\\system\\Menu.class\r\ncom\\bishe\\framework\\domain\\ucenter\\ext\\UserTokenStore.class\r\ncom\\bishe\\framework\\domain\\ucenter\\BsMenu.class\r\ncom\\bishe\\framework\\domain\\system\\request\\QueryRoleRequest.class\r\ncom\\bishe\\framework\\domain\\record\\Record.class\r\ncom\\bishe\\framework\\domain\\ucenter\\response\\UserResult.class\r\ncom\\bishe\\framework\\domain\\department\\Department.class\r\ncom\\bishe\\framework\\domain\\system\\request\\OnlineRequest.class\r\ncom\\bishe\\framework\\domain\\system\\Role.class\r\ncom\\bishe\\framework\\domain\\equipment\\Equipment.class\r\ncom\\bishe\\framework\\domain\\system\\response\\QueryBookResponse.class\r\ncom\\bishe\\framework\\domain\\ucenter\\ext\\BsUserExt.class\r\ncom\\bishe\\framework\\domain\\system\\request\\EquipListRequest.class\r\ncom\\bishe\\framework\\domain\\ucenter\\BsUser.class\r\ncom\\bishe\\framework\\domain\\system\\request\\AuthRequest.class\r\ncom\\bishe\\framework\\domain\\system\\request\\QueryRecordRequest.class\r\ncom\\bishe\\framework\\domain\\system\\response\\QueryMenuResult.class\r\ncom\\bishe\\framework\\domain\\book\\Book.class\r\ncom\\bishe\\framework\\domain\\ucenter\\response\\AuthCode.class\r\ncom\\bishe\\framework\\domain\\ucenter\\response\\JwtResult.class\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(date 1590372371000)
++++ bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(date 1595050443722)
+@@ -1,5 +1,6 @@
+ com\bishe\framework\domain\system\response\QueryDeptTreeResponse.class
+ com\bishe\framework\domain\ucenter\request\LoginRequest.class
++com\bishe\framework\domain\system\response\Upload.class
+ com\bishe\framework\domain\system\response\QueryRoleResult.class
+ com\bishe\framework\domain\system\Online.class
+ com\bishe\framework\domain\system\request\MenuListRequest.class
+Index: bishe-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- bishe-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(date 1590372371000)
++++ bishe-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(date 1595050471805)
+@@ -1,0 +1,11 @@
++com\bishe\framework\exception\CustomException.class
++com\bishe\framework\exception\ExceptionCatch.class
++com\bishe\framework\client\BsServiceList.class
++com\bishe\framework\model\response\ResultCode.class
++com\bishe\framework\model\response\Response.class
++com\bishe\framework\model\response\QueryResult.class
++com\bishe\framework\exception\ExceptionCast.class
++com\bishe\framework\model\response\CommonCode.class
++com\bishe\framework\model\response\ResponseResult.class
++com\bishe\framework\model\response\QueryResponseResult.class
++com\bishe\framework\model\request\RequestData.class
+Index: bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>F:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\response\\QueryBookResponse.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\response\\QueryPageResponse.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\Menu.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\request\\AuthRequest.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\response\\OnlineResponse.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\Permission.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\request\\QueryRoleRequest.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\response\\LoginResult.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\equipment\\Equipment.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\response\\UserResult.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\request\\EquipListRequest.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\response\\QueryEquipResult.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\department\\Department.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\book\\Book.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\Online.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\response\\QueryRecordResponse.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\Role.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\response\\JwtResult.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\response\\QueryDeptTreeResponse.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\ext\\AuthToken.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\request\\QueryPageRequest.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\response\\AuthCode.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\record\\Record.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\request\\OnlineRequest.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\ext\\BsUserExt.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\request\\MenuListRequest.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\request\\LoginRequest.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\response\\QueryMenuResult.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\BsUser.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\response\\QueryRoleResult.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\BsMenu.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\system\\request\\QueryRecordRequest.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\ext\\UserTokenStore.java\r\nF:\\aaEdu\\education1.0\\bishe-model\\src\\main\\java\\com\\bishe\\framework\\domain\\ucenter\\response\\AjaxResult.java\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(date 1590372371000)
++++ bishe-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(date 1595050456953)
+@@ -8,6 +8,7 @@
+ F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\LoginResult.java
+ F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\equipment\Equipment.java
+ F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\ucenter\response\UserResult.java
++F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\response\Upload.java
+ F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\request\EquipListRequest.java
+ F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\system\response\QueryEquipResult.java
+ F:\aaEdu\education1.0\bishe-model\src\main\java\com\bishe\framework\domain\department\Department.java

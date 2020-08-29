@@ -1,12 +1,12 @@
 server:
-  port: ${PORT:40400}
+  port: 40400
   servlet:
     context-path: /auth
 spring:
   application:
     name: bs-service-ucenter-auth
   redis:
-    host: 39.105.141.192
+    host: 112.124.29.139
     port: ${REDIS_PORT:6379}
     timeout: 5000 #连接超时 毫秒
     jedis:
@@ -15,14 +15,14 @@ spring:
         maxIdle: 3
         minIdle: 1
         maxWait: -1 #连接池最大等行时间 -1没有限制
-    password: dliceRedis
+    password: iP5vK1qR4zD4bH4u
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
     druid:
-      url: jdbc:mysql://39.105.141.192:3306/bishe_user?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://112.124.29.139:3306/bishe_user?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
       username: root
-      password: dliceMysql
+      password: cQ2aX8wZ6qW9pA3v
       # 初始连接数
       initialSize: 5
       # 最小连接池数量
@@ -45,10 +45,10 @@ spring:
       webStatFilter:
         enabled: true
 auth:
-  tokenValiditySeconds: 1200  #token存储到redis的过期时间
+  tokenValiditySeconds: 1200 #token存储到redis的过期时间
   clientId: XcWebApp
   clientSecret: XcWebApp
-  cookieDomain: www.dlice.xyz
+  cookieDomain: demo.dlice.xyz
   cookieMaxAge: 1200
 encrypt:
   key-store:
@@ -56,16 +56,16 @@ encrypt:
     secret: xuechengkeystore
     alias: xckey
     password: xuecheng
-eureka:
-  client:
-    registerWithEureka: true #服务注册开关
-    fetchRegistry: true #服务发现开关
-    serviceUrl: #Eureka客户端与Eureka服务端进行交互的地址，多个中间用逗号分隔
-      defaultZone: http://www.dlice.xyz:50101/eureka/
-  instance:
-    prefer-ip-address:  true  #将自己的ip地址注册到Eureka服务中
-    ip-address: ${IP_ADDRESS:www.dlice.xyz}
-    instance-id: www.dlice.xyz:${server.port} #指定实例id
+#eureka:
+#  client:
+#    registerWithEureka: true #服务注册开关
+#    fetchRegistry: true #服务发现开关
+#    serviceUrl: #Eureka客户端与Eureka服务端进行交互的地址，多个中间用逗号分隔
+#      defaultZone: http://www.dlice.xyz:50101/eureka/
+#  instance:
+#    prefer-ip-address:  true  #将自己的ip地址注册到Eureka服务中
+#    ip-address: ${IP_ADDRESS:www.dlice.xyz}
+#    instance-id: www.dlice.xyz:${server.port} #指定实例id
 #ribbon:
 #  MaxAutoRetries: 2 #最大重试次数，当Eureka中可以找到服务，但是服务连不上时将会重试，如果eureka中找不到服务则直接走断路器
 #  MaxAutoRetriesNextServer: 3 #切换实例的重试次数

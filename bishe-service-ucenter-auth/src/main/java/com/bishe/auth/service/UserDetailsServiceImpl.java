@@ -26,6 +26,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
     ClientDetailsService clientDetailsService;
+
     @Autowired
     UserClient userClient;
 

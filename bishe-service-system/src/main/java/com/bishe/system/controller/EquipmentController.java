@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/equip")
+@RequestMapping("/system/equip")
 public class EquipmentController {
 
     private final EquipService equipService;

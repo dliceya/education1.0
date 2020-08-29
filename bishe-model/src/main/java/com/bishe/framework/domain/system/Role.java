@@ -1,9 +1,10 @@
 package com.bishe.framework.domain.system;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.ToString;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @ToString
@@ -16,9 +17,12 @@ public class Role {
 
     private String remark;
 
-    private Date createTime;
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
 
-    private Date updateTime;
+    private LocalDateTime createTime;
+
+    @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime updateTime;
 
     private String status;
 }

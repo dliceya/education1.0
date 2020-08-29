@@ -1,4 +1,4 @@
-//package com.bishe.auth;
+//package com.bishe.config;
 //
 //import com.alibaba.fastjson.JSON;
 //import org.junit.Test;

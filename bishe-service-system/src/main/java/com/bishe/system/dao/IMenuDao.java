@@ -67,4 +67,7 @@ public interface IMenuDao {
     //修改角色状态
     @Update("update bishe_menu set status=#{status} where mid=#{mid}")
     boolean changeStatus(String mid, String status);
+
+    @Select("select count(*) from bishe_menu")
+    int getMenuListTotal();
 }

@@ -9,16 +9,15 @@ import com.bishe.system.dao.IBookDao;
 import com.bishe.system.service.impl.IBookService;
 import org.springframework.stereotype.Service;
 
-import java.util.Calendar;
-import java.util.Date;
+import java.time.Clock;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
-import java.util.TimeZone;
 
 @Service
 public class BookService implements IBookService {
 
     private final IBookDao iBookDao;
-    private Calendar timeUtils = Calendar.getInstance(TimeZone.getTimeZone("GMT+8:00"));
 
     public BookService(IBookDao iBookDao) {
         this.iBookDao = iBookDao;
@@ -42,8 +41,8 @@ public class BookService implements IBookService {
         book.setBookName(name);
         book.setBid(IdUtils.simpleUUID());
         book.setCreateBy(createBy);
-        book.setCreateTime(timeUtils.getTime());
-        book.setUpdateTime(timeUtils.getTime());
+        book.setCreateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
+        book.setUpdateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         if(iBookDao.addBook(book) > 0){
             result = new ResponseResult(CommonCode.SUCCESS);
         }else result = new ResponseResult(CommonCode.FAIL);
@@ -64,7 +63,7 @@ public class BookService implements IBookService {
     @Override
     public ResponseResult updateBook(String bid, String name) {
         ResponseResult result;
-        Date updateTime = timeUtils.getTime();
+        LocalDateTime updateTime = LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai")));
         if(iBookDao.updateBook(bid, name, updateTime) > 0){
             result = new ResponseResult(CommonCode.SUCCESS);
         }else result = new ResponseResult(CommonCode.FAIL);

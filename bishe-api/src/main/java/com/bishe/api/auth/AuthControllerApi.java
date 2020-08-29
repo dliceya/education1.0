@@ -13,7 +13,7 @@ public interface AuthControllerApi {
     public LoginResult login(LoginRequest loginRequest0);
 
     @ApiOperation("退出")
-    public ResponseResult logout();
+    public ResponseResult logout(String token);
 
     @ApiOperation("查询用户jwt令牌")
     public JwtResult userJwt();

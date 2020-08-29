@@ -10,16 +10,15 @@ import com.bishe.system.dao.RoleDao;
 import com.bishe.system.service.impl.IRoleService;
 import org.springframework.stereotype.Service;
 
-import java.util.Calendar;
+import java.time.Clock;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
-import java.util.TimeZone;
 
 @Service
 public class RoleService implements IRoleService {
     
     private final RoleDao roleDao;
-
-    private Calendar timeUtils = Calendar.getInstance(TimeZone.getTimeZone("GMT+8:00"));
 
     public RoleService(RoleDao roleDao) {
         this.roleDao = roleDao;
@@ -41,8 +40,8 @@ public class RoleService implements IRoleService {
     @Override
     public ResponseResult addRole(Role role) {
         ResponseResult result;
-        role.setCreateTime(timeUtils.getTime());
-        role.setUpdateTime(timeUtils.getTime());
+        role.setCreateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
+        role.setUpdateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         role.setRid(IdUtils.simpleUUID());
 
 
@@ -68,11 +67,11 @@ public class RoleService implements IRoleService {
 
     @Override
     public ResponseResult updateRole(Role role) {
-        role.setUpdateTime(timeUtils.getTime());
+        role.setUpdateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         ResponseResult result;
 
-        role.setCreateTime(timeUtils.getTime());
-        role.setUpdateTime(timeUtils.getTime());
+        role.setCreateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
+        role.setUpdateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         if(roleDao.updateRole(role) > 0){
             result = new ResponseResult(CommonCode.SUCCESS);
         }else {

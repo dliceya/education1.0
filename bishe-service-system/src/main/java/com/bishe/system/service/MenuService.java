@@ -11,16 +11,15 @@ import com.bishe.system.service.impl.IMenuService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
-import java.util.Calendar;
+import java.time.Clock;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
-import java.util.TimeZone;
 
 @Service
 public class MenuService implements IMenuService {
 
     private final IMenuDao iMenuDao;
-
-    private Calendar timeUtils = Calendar.getInstance(TimeZone.getTimeZone("GMT+8:00"));
 
     public MenuService(IMenuDao iMenuDao) {
         this.iMenuDao = iMenuDao;
@@ -37,6 +36,8 @@ public class MenuService implements IMenuService {
             menuList.forEach(items -> items.setChild(iMenuDao.getMenuListByMid(items.getMid())));
             result = new QueryMenuResult(CommonCode.SUCCESS, menuList);
         }else result = new QueryMenuResult(CommonCode.FAIL, null);
+
+        result.setTotal(iMenuDao.getMenuListTotal());
 
         return result;
     }
@@ -72,8 +73,8 @@ public class MenuService implements IMenuService {
             menu.setParent("0");
         }
         menu.setCreateBy("root");
-        menu.setCreateTime(timeUtils.getTime());
-        menu.setUpdateTime(timeUtils.getTime());
+        menu.setCreateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
+        menu.setUpdateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         menu.setMid(IdUtils.simpleUUID());
 
         if(iMenuDao.addMenu(menu) > 0){
@@ -101,7 +102,7 @@ public class MenuService implements IMenuService {
     public ResponseResult updateMenu(Menu menu) {
         ResponseResult result;
 
-        menu.setUpdateTime(timeUtils.getTime());
+        menu.setUpdateTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
         if(iMenuDao.updateMenu(menu) > 0){
             result = new ResponseResult(CommonCode.SUCCESS);
         }else result = new ResponseResult(CommonCode.FAIL);

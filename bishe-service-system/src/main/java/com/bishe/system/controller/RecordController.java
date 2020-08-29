@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/record")
+@RequestMapping("/system/record")
 public class RecordController {
 
     private final RecordService recordService;
