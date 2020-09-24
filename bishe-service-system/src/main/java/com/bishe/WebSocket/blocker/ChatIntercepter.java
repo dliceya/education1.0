@@ -13,14 +13,13 @@ import java.util.Map;
 public class ChatIntercepter extends HttpSessionHandshakeInterceptor {
     @Override
     public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response, WebSocketHandler wsHandler, Map<String, Object> attributes) throws Exception {
-        //我们为了区别链接之前是不是通过用户名来区别是谁的，此处我们还是一样的逻辑通过名字区分
-        //现在我们获取到用户的名字，因为我们的地址是使用的rest风格，定义的地址是最后以为是名字，所以此处我们只需要找到请求地址拿到最后一位就行
+        
         System.out.println("握手之前");
         String url = request.getURI().toString();
-        //如果此处 url.lastIndexOf 后面没有 +1 则会带上 /
+        //获取连接用户名
         String name = url.substring(url.lastIndexOf("/") + 1);
         //给当前链接设置名字
-        attributes.put("name",name);//建议将name抽取为静态常量
+        attributes.put("name",name);
         return super.beforeHandshake(request, response, wsHandler, attributes);
     }
 
